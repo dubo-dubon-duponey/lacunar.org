@@ -1,7 +1,7 @@
 <xml xmlns:o="urn:schemas-microsoft-com:office:office">
  <o:MainFile HRef="::Miel.Présent.html"/>
- <o:File HRef="image001.jpg"/>
- <o:File HRef="image002.png"/>
- <o:File HRef="header.htm"/>
- <o:File HRef="filelist.xml"/>
+ <o:File href="image001.jpg"/>
+ <o:File href="image002.png"/>
+ <o:File href="header.htm"/>
+ <o:File href="filelist.xml"/>
 </xml>
