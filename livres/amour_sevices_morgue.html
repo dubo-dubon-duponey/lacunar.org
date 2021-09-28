@@ -243,7 +243,7 @@
       text-align: center;
     }
     aside blockquote:after {
-      content: "\a0»"
+      content: "\00a0»"
     }
     aside blockquote:before {
       content: "«\00a0"
@@ -361,6 +361,12 @@
     main img {
       width: 198px;
       height: 272px;
+    }
+    q::before {
+      content: "«\00a0"
+    }
+    q::after{
+      content: "\00a0»"
     }
   </style>
 </head>
