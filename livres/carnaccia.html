@@ -74,11 +74,15 @@
       text-align: center;
     }
 
-    h1 {
+    header h1 {
       font-variant: all-small-caps;
       color: #af0000;
       font-size: xxx-large;
       margin: 0;
+    }
+
+    aside h1 {
+      font-size: large;
     }
 
     h2 {
@@ -219,6 +223,15 @@
       text-align: left;
     }
 
+
+    aside blockquote:after {
+      content: "\00a0»"
+    }
+
+    aside blockquote:before {
+      content: "«\00a0"
+    }
+
     section:nth-of-type(2) blockquote::first-letter {
       margin: 0;
       padding: 0;
@@ -240,6 +253,7 @@
     footer section address a {
       font-style: normal;
       margin-left: 2rem;
+      margin-top: 15px;
     }
 
     address a {
@@ -293,7 +307,7 @@
     </details>
   </main>
   <aside>
-    <h3>Pierre Jourde dans <cite>Le Monde Diplomatique</cite>, Janvier 2007</h3>
+    <h1>Pierre Jourde dans <cite>Le Monde Diplomatique</cite>, Janvier 2007</h1>
     <blockquote cite="https://www.monde-diplomatique.fr/2007/01/JOURDE/14336">
       Ainsi, les éditions Parc, qui publient
       de beaux petits livres, originaux, dans une indifférence presque
@@ -456,7 +470,7 @@
   <section>
     <h3>Disponible à La Lucarne des Ecrivains</h3>
     <address>
-      <a href="https://goo.gl/maps/7q4K8UB4j5CGearNA">115 rue de l’Ourcq<br /> 75019 Paris</a>
+      <a href="https://goo.gl/maps/7q4K8UB4j5CGearNA">115 rue de l’Ourcq, 75019 Paris</a>
       <a href="tel:+33 6 88 23 52 45">06 88 23 52 45</a>
       <a href="mailto:lalucarnedesecrivains1@gmail.com">Email</a>
       <a href="https://lalucarnedesecrivains.wordpress.com/">Site Web</a>
