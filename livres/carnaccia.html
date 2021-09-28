@@ -25,35 +25,78 @@
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "breadcrumb": "Books > Marketing > JSON",
+      "breadcrumb": "Lacunar > Parc Éditions > Livres > Carnaccia",
       "mainEntity":{
         "@type": "Book",
-        "author": "http://www.example.com/author.html",
-        "bookFormat": "http://schema.org/EBook",
-        "datePublished": "2015-05-01",
-        "image": "coverImage.jpg",
-        "inLanguage": "English",
-        "isbn": "00000000",
-        "name": "The Title of Book",
-        "numberOfPages": "1234",
-        "offers": {
-          "@type": "Offer",
-          "availability": "http://schema.org/InStock",
-          "price": "9.99",
-          "priceCurrency": "USD"
+        "author": {
+          "@type": "Person",
+          "name": "Olivier Gambier"
         },
-        "publisher": "O'Json Publishing",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4",
-          "reviewCount": "12"
+        "datePublished": "2001-10-01",
+        "image": "https://lacunar.org/images/covers/og/carnaccia.webp",
+        "inLanguage":"French",
+        "isbn": "2912010128",
+        "name": "Carnaccia",
+        "numberOfPages": "144",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Parc Édition"
         }
       }
     }
   </script>
-
   <!--
+        "bookFormat": "Paperback",
+        "@id": "/livres/carnaccia",
+        "url": "/livres/carnaccia",
+        "alternateName":"De l'eschatologie bien tempérée",
+        "illustrator": {
+          "@type": "https://schema.org/Person",
+          "name": "Eric Roncerel"
+        },
+        "copyrightHolder": {
+          "@type": "https://schema.org/Organization",
+          "name": "Parc Édition"
+        },
+        "copyrightNotice": "All rights reserved",
+        "copyrightYear": 2001,
+        "countryOfOrigin": {
+          "@type": "https://schema.org/Country",
+          "name": "France"
+        },
+        "description": "Un petit chef-d’œuvre comme Carnaccia, d’Olivier Gambier, est destiné à rester quasi ignoré. Dans un siècle, on le classera peut-être parmi les grands oubliés."
 
+
+<script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "breadcrumb": "Books > Marketing > JSON",
+      "mainEntity":{
+              "@type": "Book",
+              "author": "http://www.example.com/author.html",
+              "bookFormat": "http://schema.org/EBook",
+              "datePublished": "2015-05-01",
+              "image": "coverImage.jpg",
+              "inLanguage": "English",
+              "isbn": "00000000",
+              "name": "The Title of Book",
+              "numberOfPages": "1234",
+              "offers": {
+                "@type": "Offer",
+                "availability": "http://schema.org/InStock",
+                "price": "9.99",
+                "priceCurrency": "USD"
+              },
+              "publisher": "O'Json Publishing",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4",
+                "reviewCount": "12"
+              }
+            }
+    }
+</script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -95,24 +138,7 @@
       "description":"The life of a boy in the streets of Sao Paulo, involved with crimes, prostitution and drugs.",
       "review":{"@type":"Review","itemReviewed":{"@type":"CreativeWork","url":"/title/tt0082912/"},"author":{"@type":"Person","name":"roetinger"},"dateCreated":"2004-06-23","inLanguage":"English","name":"Based on the book by the same name","reviewBody":"When I was living in Brazil, the first book I read in Portuguese was Pixote: infancia dos mortos, which was the first and most famous novel written by Jose Louzeiro in 1977. When I discovered there was a movie, I had to see it. \n\nIt&apos;s been about 5 years since I read the book and I may have misunderstood many things since my Portuguese is not fluent, but I believe that the story in the movie is not at all the same story in the book. \n\nThe names of the characters are all the same and some of the events are similar. In the book, the story primarily focuses on the kids&apos; lives engaged in crime around the city selling drugs for Crystal. In contrast to the movie, in the book they spend very little time in the boys reformatory, Fumaca is with them throughout much of the book, and in the end the boys get major revenge on the police. \n\nThe book and the film are equally disturbing portrayals of Brazil&apos;s street children. I&apos;m not sure if the book is available in English."},"aggregateRating":{"@type":"AggregateRating","ratingCount":7445,"bestRating":10,"worstRating":1,"ratingValue":8},"contentRating":"R","genre":["Crime","Drama"],"datePublished":"1981-09-18","keywords":"boy frontal nudity,boy,violence,police,detention center","actor":[{"@type":"Person","url":"/name/nm0196236/","name":"Fernando Ramos da Silva"},{"@type":"Person","url":"/name/nm0432247/","name":"Jorge Julião"},{"@type":"Person","url":"/name/nm0609923/","name":"Gilberto Moura"}],"director":[{"@type":"Person","url":"/name/nm0002199/","name":"Hector Babenco"}],"creator":[{"@type":"Organization","url":"/company/co0064075/"},{"@type":"Organization","url":"/company/co0094452/"},{"@type":"Person","url":"/name/nm0002199/","name":"Hector Babenco"},{"@type":"Person","url":"/name/nm0244525/","name":"Jorge Durán"},{"@type":"Person","url":"/name/nm0522216/","name":"José Louzeiro"}],"duration":"PT2H8M"}
     ,
-      "illustrator": {
-        "@type": "Person",
-        "name": "Eric Roncerel"
-      },
-      "numberOfPages": 144,
-      "isbn": "2-912010-12-8",
 
-      "bookFormat": "Paperback",
-      "copyrightHolder": {
-        "@type": "Organization",
-        "name": "Parc Édition"
-      },
-      "copyrightNotice": "All rights reserved",
-      "copyrightYear": 2001,
-      "countryOfOrigin": {
-        "@type": "Country",
-        "name": "France"
-      },
 
   -->
 
