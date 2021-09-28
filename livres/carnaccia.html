@@ -7,6 +7,7 @@
   <link rel="apple-touch-icon" href="/icon.png">
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/libertinus.css">
   <meta name="theme-color" content="#fafafa">
   <meta property="og:site_name" content="lacunar.org">
   <meta property="og:locale" content="fr-FR">
@@ -14,8 +15,8 @@
   <title>Carnaccia</title>
   <link rel="canonical" href="https://lacunar.org/livres/carnaccia">
   <meta name="author" content="Olivier Gambier">
-  <meta name="description" content="Le choix de Pierre Jourde in Monde Diplomatique Janvier 2007">
-  <meta name="keywords" content="Roman, Parc Édition, PochParc17, 2001, Carnaccia, Chien, Venceslas, Aleph, Molibden, Huysmans, Beckett, Borges, Olivier Gambier">
+  <meta name="description" content="Un roman moderne - le choix de Pierre Jourde in Monde Diplomatique Janvier 2007">
+  <meta name="keywords" content="Olivier Gambier, Roman, Parc Édition, PochParc17, 2001, Carnaccia, Chien, Venceslas, Aleph, Molibden, Huysmans, Beckett, Borges, Eric Roncerel">
 
   <meta property="og:title" content="Carnaccia">
   <meta property="og:url" content="https://lacunar.org/livres/carnaccia">
@@ -42,247 +43,453 @@
     gtag('config', 'G-14YCMGHCE9');
   </script>
   <style>
-    body {
-      margin: auto;
-      border: 4px double black;
-      width: 750px;
-      padding: 10px;
-      margin-top: 20px;
-      margin-bottom: 40px;
-      text-align: justify;
-
-      color: rgb(0, 0, 0);
-      background-color: rgb(255, 204, 153);
+    html {
+      height: 100%;
     }
+
+    body {
+      font-family: Libertinus Serif, serif;
+      background-color: rgb(255, 204, 153);
+      min-height: 100%;
+      text-align: justify;
+      max-width: 1024px;
+      margin: auto;
+    }
+
     a:link {
-      color: #000033;
+      color: #af0000;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     a:active {
-      color: #000099;
+      color: #af0000;
     }
     a:visited {
-      color: #990099;
+      color: #af0000;
     }
 
-    article {
-    }
     header {
       text-align: center;
     }
-    header h1 {
-      font-variant: small-caps;
-      font-style: italic;
+
+    h1 {
+      font-variant: all-small-caps;
       color: #af0000;
-      font-size: xx-large;
-      font-weight: bold;
+      font-size: xxx-large;
+      margin: 0;
     }
-    header h2 {
+
+    h2 {
+      margin: 0;
+      font-variant: small-caps;
       font-size: large;
+    }
+
+    main {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    main img {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+    main dt {
+      display: none;
+    }
+    main dt::after {
+      content: ": ";
+    }
+    main dt:nth-of-type(6) {
+      display: inline;
+    }
+    main dt:nth-of-type(8) {
+      display: inline;
+      font-size: small;
+    }
+    main dt:nth-of-type(8)::before {
+      content: "\a(";
+      white-space: pre;
+    }
+
+    main dd {
+      display: inline;
+      margin: 0;
+    }
+    main details dd:nth-of-type(1), main details dd:nth-of-type(2)  {
+      display: none;
+    }
+    main dd:not(:last-of-type):not(:first-of-type)::after {
+      content: ","
+    }
+    main dd:first-of-type {
+      display: block
+    }
+    main dd:nth-of-type(6)::after {
+      content: "" !important;
+    }
+    main dd:nth-of-type(7) {
+      display: none;
+    }
+    main dd:nth-of-type(8){
+      font-size: small;
+    }
+    main dd:nth-of-type(8)::after {
+      content: ")";
+    }
+
+    mark {
+      font-style: italic;
+      background-color: transparent;
+      color: inherit;
       font-weight: bold;
     }
-    footer {
+
+    strong {
+      font-variant: small-caps;
+    }
+
+    main>strong:first-of-type {
+      display: block;
+      font-size: x-large;
+    }
+
+    aside {
+      padding-right: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      color: #29627e;
+      border: 1px solid black;
+    }
+
+    body {
+      padding: 0.5rem;
+    }
+    @media only screen and (min-width: 600px) {
+      aside {
+        width: 50%;
+        float: right;
+        margin-right: 0;
+      }
+      body {
+        padding: 2rem;
+      }
+    }
+
+    section > p:first-of-type::first-letter {
+      margin: 0;
+      padding: 0;
+      margin-top: -0.6rem;
+      margin-bottom: -1.5rem;
+      float: left;
+      font-size: 300%;
+    }
+    article section:first-of-type h3 {
+      display: none;
+    }
+    section:nth-of-type(2) h3 {
+      margin-top: 3rem;
       text-align: center;
+      font-variant: small-caps;
+      width: 100%;
+      border-bottom: 1px solid black;
     }
-    blockquote:before{
-      content: "«\00a0"
+
+    footer h3 {
+      margin-top: 3rem;
+      text-align: center;
+      font-variant: small-caps;
+      width: 100%;
+      border-bottom: 1px solid black;
     }
-    blockquote:after{
-      content: "\00a0»"
+
+    footer {
+    }
+
+    footer section {
+      text-align: center;
+      margin: auto;
+      max-width: 50%
+    }
+
+    footer section address {
+      text-align: left;
+    }
+
+    section:nth-of-type(2) blockquote::first-letter {
+      margin: 0;
+      padding: 0;
+      margin-top: -0.6rem;
+      margin-bottom: -1.5rem;
+      margin-left: 1rem;
+      float: left;
+      font-size: 300%;
+    }
+
+    footer section {
+      border: 1px solid black;
+      padding: 1rem;
+    }
+
+    footer section h3 {
+      margin-top: 0;
+    }
+    footer section address a {
+      font-style: normal;
+      margin-left: 2rem;
+    }
+
+    address a {
+      display: block;
+    }
+
+    address a[href^="https://goo"]::before {
+      content: "🌍 ";
+    }
+    address a[href^="https://la"]::before {
+      content: "🌐 ";
+    }
+    address a[href^="mailto"]::before {
+      content: "📧 ";
+    }
+    address a[href^="tel"]::before {
+      content: "📱 ";
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Carnaccia</h1>
-  <h2>Olivier Gambier</h2>
-  <img alt="Couverture Carnaccia" src="/images/covers/og/carnaccia.jpg" />
-  <p>PochParc17, Roman, 144 pages, 7 euros - ISBN 2-912010-12-8</p>
-  <p style="font-size: small;">(Couverture&nbsp;: peinture d'Éric Roncerel)</p>
-  <p>(Disponible&nbsp;: voir bas de page)</p>
 </header>
 
 <article>
-  <p style="font-weight: bold; font-style: italic; font-size: large;">
-    Aleph, plaie errante, se lie
-    à Baal, démon affamé. C'est ensemble
-    qu'ils parcourent Molibden, rencontrant d'autres plaies
-    errantes et Venceslas le chien, Graal d'Aleph. Dans la boue
-    et dans le litron, les errants pataugent jusqu'à
-    l'inéluctable fin de toute fiction&nbsp;; puisque
-    Carnaccia n'est autre que la dévoration de ce qui ne
-    saurait naître. Mais par delà l'eschatologie et
-    les sanies auxquelles Carnaccia prétend, il y a la
-    faim des mots&nbsp;: camisoles avides de chair, telle une oreille
-    en tourbillon, aspirant à eux tous les corps
-    animés. Il ne faut donc s'étonner de rien,
-    sinon de la survie d'Aleph. Et pourtant, Aleph n'est-il pas
-    le seul, parmi ces voix d'outre-tombe, à recueillir
-    celle du chien&nbsp;?
-  </p>
-  <p style="font-weight: bold; font-style: italic; font-size: large;">
-    Animalesques, carnassiers ou
-    tendres, les protagonistes de cette aventure
-    s'entredévorent, mais la danse n'est macabre qu'en
-    apparence&nbsp;; le verbe aiguisé telle une lame de
-    chirurgien génialement inspiré-- joueur
-    d'échec à ses heures -- y opère une
-    alchimie d'un genre inédit, comme pour faire place
-    nette et évoquer «&nbsp;au-delà des yeux morts de
-    ses contemporains les parfums du marécage&nbsp;».
-    Celui, libérateur, d'une absolue intelligence,
-    ouverte à toutes les
-    métamorphoses.
-  </p>
-  <p style="font-weight: bold; font-size: large;">
-    Olivier Gambier (25 ans) réussit mieux qu'un
-    roman&nbsp;: une épopée aux exorcismes graves,
-    drôles et périlleux...
-  </p>
-  <hr />
-  <p style="font-weight: bold; font-size: large;">Pierre Jourde dans <cite>Le Monde Diplomatique</cite>, Janvier 2007&nbsp;:</p>
-  <blockquote cite="https://www.monde-diplomatique.fr/2007/01/JOURDE/14336">
-    Ainsi, les éditions Parc, qui publient
-    de beaux petits livres, originaux, dans une indifférence presque
-    complète, ont pris le risque de faire paraître les
-    premiers textes de Gilles Sebhan et de Pierre Mérot. Mais, en
-    dehors de quelques découvreurs tels que Dominique Noguez, les
-    journalistes n’ont commencé à les considérer
-    comme intéressants que lorsqu’ils sont entrés dans
-    des maisons plus connues.
-    <span style="font-style: italic;">
-      D’autres ont eu moins de chance.
-      Un petit chef-d’œuvre comme Carnaccia, d’Olivier Gambier, est destiné à rester quasi ignoré.
-      Dans un siècle, on le classera peut-être parmi les grands oubliés.
-    </span>
-  </blockquote>
-  <hr />
-  <p>Extraits.</p>
-  <blockquote>
-    J'errais depuis longtemps&nbsp;; je
-    n'étais pas fatigué&nbsp;; je ne cherchais rien de
-    particulier, ni n'évitais rien en particulier&nbsp;; mon
-    regard flottait, j'abolissais mes yeux&nbsp;; devant mes yeux
-    qu'abolissait mon regard se déployaient pour moi les
-    pulsations des corps croisés selon la stricte
-    géométrie du hasard&nbsp;; ils pulsaient, oui&nbsp;; que
-    pulsaient-ils&nbsp;? Je n'ai jamais bien su&nbsp;; ça ne
-    m'intéresse pas de le savoir&nbsp;; ils pulsent et cela
-    suffit, je peux toucher ces pulsations et les voir se tordre
-    devant moi, fumée impensable, improbable combustion&nbsp;;
-    je devais parfois courir&nbsp;; ce qui pulse n'est pas toujours
-    empli de bonnes intentions&nbsp;; ou plus grave, n'est pas
-    toujours empli d'intention&nbsp;; la rencontre de deux corps
-    n'est jamais innocente&nbsp;; je devais courir, et rencontrais
-    parfois dans le souffle de ma course un de ces corps
-    découpés&nbsp;; ou, bien pis, de la matière
-    inerte, des murs, des détritus, du bitume, des objets
-    mous, d'autres solides&nbsp;; je ne sais pas pourquoi ces corps
-    pulsent&nbsp;; je pense que quelque chose brûle qui les
-    consume&nbsp;; ou bien brûlent-ils et consument-ils quelque
-    chose&nbsp;? J'ai déjà vu des corps qui
-    brûlent&nbsp;; ce n'est pas ça&nbsp;; moderne
-    consomption... J'entrai.
-  </blockquote>
-  <blockquote>
-    Rampez esclaves et regardez
-    brûler ceux qui dans la liberté se consument&nbsp;», voilà ce qu'on nous dit. Rampez ! Mais on m'a
-    menti, on me ment, morale d'esclaves et morale de cadavres,
-    car je le sais maintenant, on m'a qualifié de spectre
-    lorsque j'étais au plus bas, on a
-    dénigré mes faillites et condamné ma
-    tête, on a voulu faire de moi un objet médical,
-    occulté sous la morale ce qui niait la morale, on m'a
-    traité de malade ou de fou, je le sais, je suis la
-    somme, j'étais la somme, et j'étais libre
-    d'esprit mais on me rattrapait par le corps pour
-    aliéner cette liberté, stigmatisant sur mon
-    corps ce que l'on nommait nécessaires déboires
-    d'un esprit nageant dans l'oisiveté, mais je ne
-    connaissais pas l'ennui, alors j'ai détruit mon corps
-    pour échapper à la maladie, à ce que
-    j'appelle maladie et qu'ils nomment santé, en le
-    détruisant j'échappais à la
-    servilité, j'en faisais l'égal de
-    moi-même chose libre, libre liberté de
-    fantôme, sans cesse rattrapé,
-    enchaîné pour faire de moi un spectre,
-    aliéné par la maladie, j'en comprends le sens
-    aujourd'hui, oui, vraiment, je me suis détruit pour
-    me libérer, je suis devenu maladie pour recouvrer la
-    santé, j'ai échappé à leur
-    santé, chaîne, maladie, à cette
-    santé qui n'est qu'esclavage, qui n'est qu'entretien
-    et conservation, j'ai fait de mon corps une dépense
-    contre l'utile qu'ils prétendaient en tirer, j'ai
-    fait de mon esprit une dépense contre l'utile, je
-    suis une dépense, et l'esclavage ne me tient plus
-    aujourd'hui, plus celui-là en tous cas, un autre
-    peut-être, je n'en sais rien, je n'en sais encore
-    rien, mais je saurai, ou peut-être pas, ni maintenant
-    que j'ai compris ce qui m'a libéré, je peux
-    être aujourd'hui l'antinome de ce que j'ai
-    été, je peux être aujourd'hui ce qu'ils
-    nomment santé, ce n'est pas grave, pourquoi cela le
-    serait-il&nbsp;? J'étais celui qui détruit, je le
-    serai encore ou bien pas, je ne le suis pas ou pas encore,
-    je n'en ai plus besoin ça ne m'est plus utile, ce qui
-    le rend si précieux, la destruction comme ils disent
-    est devenue mienne puisque ne m'appartenant plus, la mort
-    est devenue mienne puisque ma mort ne leur appartient plus,
-    mon corps est devenu mien puisque ne s'appartenant
-    plus.
-  </blockquote>
-  <blockquote>
-    Oui, c'est moi, je suis celui... je suis
-    l'Aleph, et j'ai dû me libérer&nbsp;; oui, en
-    dernier ressort peut-être est-ce là ma maladie,
-    mais qui oserait le dire, sinon moi&nbsp;? Baal peut-être,
-    lui qui sait si bien n'être rien. Il a fallu me
-    libérer, mais quelle liberté&nbsp;? Baal le dirait,
-    lui pourtant si bégueule. Il parlerait d'autre chose,
-    lui qui a lu et lui qui sait. Car finalement le
-    problème n'est pas d'être libre ou de ne pas
-    être libre, mais d'accepter et de refuser. Oui, il a
-    fallu refuser, je dois refuser et c'est là ma
-    maladie, et maladie je suis, c'est cela qui déchire
-    ce qu'ils appellent réalité, en cela que Baal
-    est déchirure, en quoi je me déchire
-    forcément, ou bien non, en quoi Baal est en moi, oui,
-    même cela je n'en veux plus, cela qui est une arme,
-    être soi-même ce qui se déchire sous
-    l'intensité du refus, non, je suis la
-    déchirure et Baal est avec moi, voilà ce que
-    je sais, voilà ce que je suis, voilà ce qu'il
-    m'a dit, ce qu'il m'a chuchoté, oui, voilà
-    comment l'on devient esclave, en ayant peur du refus, parce
-    que le refus déchire l'être, cela Baal me l'a
-    dit, il faut accepter d'être déchiré,
-    d'être gâché, de ne plus être utile
-    mais inutile dépense, oui, et c'est peut-être
-    cela le début de la liberté, c'est une
-    naissance, voilà une image qui plairait à qui
-    vous savez. [...]
-  </blockquote>
-  <p style="text-align: right">Olivier Gambier</p>
-  <p style="text-align: right">(Extraits.)</p>
+  <main>
+    <h1>Carnaccia</h1>
+    <strong>Olivier Gambier</strong>
+    <img alt="Couverture Carnaccia" src="/images/covers/og/carnaccia.jpg" />
+    <details>
+      <summary>Un livre <strong>Parc</strong></summary>
+      <dl>
+        <dt>Titre</dt>
+        <dd>Carnaccia</dd>
+        <dt>Auteur</dt>
+        <dd>Olivier Gambier</dd>
+        <dt>Collection</dt>
+        <dd>PochParc17</dd>
+        <dt>Type</dt>
+        <dd>Roman</dd>
+        <dt>Taille</dt>
+        <dd>144 pages</dd>
+        <dt>ISBN</dt>
+        <dd>2-912010-12-8</dd>
+        <dt>Publié</dt>
+        <dd>Octobre 2001</dd>
+        <dt>Couverture</dt>
+        <dd><cite>Paysage Missionaire</cite>, huile sur toile, Éric Roncerel</dd>
+      </dl>
+    </details>
+  </main>
+  <aside>
+    <h3>Pierre Jourde dans <cite>Le Monde Diplomatique</cite>, Janvier 2007</h3>
+    <blockquote cite="https://www.monde-diplomatique.fr/2007/01/JOURDE/14336">
+      Ainsi, les éditions Parc, qui publient
+      de beaux petits livres, originaux, dans une indifférence presque
+      complète, ont pris le risque de faire paraître les
+      premiers textes de Gilles Sebhan et de Pierre Mérot. Mais, en
+      dehors de quelques découvreurs tels que Dominique Noguez, les
+      journalistes n’ont commencé à les considérer
+      comme intéressants que lorsqu’ils sont entrés dans
+      des maisons plus connues.
+      <mark>
+        D’autres ont eu moins de chance.
+        Un petit chef-d’œuvre comme <cite>Carnaccia</cite>, d’Olivier Gambier, est destiné à rester quasi ignoré.
+        Dans un siècle, on le classera peut-être parmi les grands oubliés.
+      </mark>
+    </blockquote>
+  </aside>
+  <section>
+    <h3>Présentation</h3>
+    <p>
+      Aleph, plaie errante, se lie
+      à Baal, démon affamé. C’est ensemble
+      qu’ils parcourent Molibden, rencontrant d’autres plaies
+      errantes et Venceslas le chien, Graal d’Aleph. Dans la boue
+      et dans le litron, les errants pataugent jusqu’à
+      l’inéluctable fin de toute fiction&nbsp;; puisque
+      Carnaccia n’est autre que la dévoration de ce qui ne
+      saurait naître. Mais par delà l’eschatologie et
+      les sanies auxquelles <cite>Carnaccia</cite> prétend, il y a la
+      faim des mots&nbsp;: camisoles avides de chair, telle une oreille
+      en tourbillon, aspirant à eux tous les corps
+      animés. Il ne faut donc s’étonner de rien,
+      sinon de la survie d’Aleph. Et pourtant, Aleph n’est-il pas
+      le seul, parmi ces voix d’outre-tombe, à recueillir
+      celle du chien&nbsp;?
+    </p>
+    <p>
+      Animalesques, carnassiers ou tendres, les protagonistes de cette aventure
+      s’entredévorent, mais la danse n’est macabre qu’en apparence&nbsp;; le verbe aiguisé telle une lame de
+      chirurgien génialement inspiré&nbsp;—&nbsp;joueur
+      d’échec à ses heures&nbsp;—&nbsp;y opère une
+      alchimie d’un genre inédit, comme pour faire place
+      nette et évoquer «&nbsp;au-delà des yeux morts de ses contemporains les parfums du marécage&nbsp;».
+      Celui, libérateur, d’une absolue intelligence, ouverte à toutes les métamorphoses.
+    </p>
+    <p>
+      Olivier Gambier (25 ans) réussit mieux qu’un roman&nbsp;: une épopée aux exorcismes graves, drôles et périlleux...
+    </p>
+  </section>
+  <section>
+    <h3>Extraits</h3>
+    <blockquote>
+      J’errais depuis longtemps&nbsp;; je
+      n’étais pas fatigué&nbsp;; je ne cherchais rien de
+      particulier, ni n’évitais rien en particulier&nbsp;; mon
+      regard flottait, j’abolissais mes yeux&nbsp;; devant mes yeux
+      qu’abolissait mon regard se déployaient pour moi les
+      pulsations des corps croisés selon la stricte
+      géométrie du hasard&nbsp;; ils pulsaient, oui&nbsp;; que
+      pulsaient-ils&nbsp;? Je n’ai jamais bien su&nbsp;; ça ne
+      m’intéresse pas de le savoir&nbsp;; ils pulsent et cela
+      suffit, je peux toucher ces pulsations et les voir se tordre
+      devant moi, fumée impensable, improbable combustion&nbsp;;
+      je devais parfois courir&nbsp;; ce qui pulse n’est pas toujours
+      empli de bonnes intentions&nbsp;; ou plus grave, n’est pas
+      toujours empli d’intention&nbsp;; la rencontre de deux corps
+      n’est jamais innocente&nbsp;; je devais courir, et rencontrais
+      parfois dans le souffle de ma course un de ces corps
+      découpés&nbsp;; ou, bien pis, de la matière
+      inerte, des murs, des détritus, du bitume, des objets
+      mous, d’autres solides&nbsp;; je ne sais pas pourquoi ces corps
+      pulsent&nbsp;; je pense que quelque chose brûle qui les
+      consume&nbsp;; ou bien brûlent-ils et consument-ils quelque
+      chose&nbsp;? J’ai déjà vu des corps qui
+      brûlent&nbsp;; ce n’est pas ça&nbsp;; moderne
+      consomption... J’entrai.
+    </blockquote>
+    <blockquote>
+      Rampez esclaves et regardez
+      brûler ceux qui dans la liberté se consument&nbsp;», voilà ce qu’on nous dit. Rampez ! Mais on m’a
+      menti, on me ment, morale d’esclaves et morale de cadavres,
+      car je le sais maintenant, on m’a qualifié de spectre
+      lorsque j’étais au plus bas, on a
+      dénigré mes faillites et condamné ma
+      tête, on a voulu faire de moi un objet médical,
+      occulté sous la morale ce qui niait la morale, on m’a
+      traité de malade ou de fou, je le sais, je suis la
+      somme, j’étais la somme, et j’étais libre
+      d’esprit mais on me rattrapait par le corps pour
+      aliéner cette liberté, stigmatisant sur mon
+      corps ce que l’on nommait nécessaires déboires
+      d’un esprit nageant dans l’oisiveté, mais je ne
+      connaissais pas l’ennui, alors j’ai détruit mon corps
+      pour échapper à la maladie, à ce que
+      j’appelle maladie et qu’ils nomment santé, en le
+      détruisant j’échappais à la
+      servilité, j’en faisais l’égal de
+      moi-même chose libre, libre liberté de
+      fantôme, sans cesse rattrapé,
+      enchaîné pour faire de moi un spectre,
+      aliéné par la maladie, j’en comprends le sens
+      aujourd’hui, oui, vraiment, je me suis détruit pour
+      me libérer, je suis devenu maladie pour recouvrer la
+      santé, j’ai échappé à leur
+      santé, chaîne, maladie, à cette
+      santé qui n’est qu’esclavage, qui n’est qu’entretien
+      et conservation, j’ai fait de mon corps une dépense
+      contre l’utile qu’ils prétendaient en tirer, j’ai
+      fait de mon esprit une dépense contre l’utile, je
+      suis une dépense, et l’esclavage ne me tient plus
+      aujourd’hui, plus celui-là en tous cas, un autre
+      peut-être, je n’en sais rien, je n’en sais encore
+      rien, mais je saurai, ou peut-être pas, ni maintenant
+      que j’ai compris ce qui m’a libéré, je peux
+      être aujourd’hui l’antinome de ce que j’ai
+      été, je peux être aujourd’hui ce qu’ils
+      nomment santé, ce n’est pas grave, pourquoi cela le
+      serait-il&nbsp;? J’étais celui qui détruit, je le
+      serai encore ou bien pas, je ne le suis pas ou pas encore,
+      je n’en ai plus besoin ça ne m’est plus utile, ce qui
+      le rend si précieux, la destruction comme ils disent
+      est devenue mienne puisque ne m’appartenant plus, la mort
+      est devenue mienne puisque ma mort ne leur appartient plus,
+      mon corps est devenu mien puisque ne s’appartenant
+      plus.
+    </blockquote>
+    <blockquote>
+      Oui, c’est moi, je suis celui... je suis
+      l’Aleph, et j’ai dû me libérer&nbsp;; oui, en
+      dernier ressort peut-être est-ce là ma maladie,
+      mais qui oserait le dire, sinon moi&nbsp;? Baal peut-être,
+      lui qui sait si bien n’être rien. Il a fallu me
+      libérer, mais quelle liberté&nbsp;? Baal le dirait,
+      lui pourtant si bégueule. Il parlerait d’autre chose,
+      lui qui a lu et lui qui sait. Car finalement le
+      problème n’est pas d’être libre ou de ne pas
+      être libre, mais d’accepter et de refuser. Oui, il a
+      fallu refuser, je dois refuser et c’est là ma
+      maladie, et maladie je suis, c’est cela qui déchire
+      ce qu’ils appellent réalité, en cela que Baal
+      est déchirure, en quoi je me déchire
+      forcément, ou bien non, en quoi Baal est en moi, oui,
+      même cela je n’en veux plus, cela qui est une arme,
+      être soi-même ce qui se déchire sous
+      l’intensité du refus, non, je suis la
+      déchirure et Baal est avec moi, voilà ce que
+      je sais, voilà ce que je suis, voilà ce qu’il
+      m’a dit, ce qu’il m’a chuchoté, oui, voilà
+      comment l’on devient esclave, en ayant peur du refus, parce
+      que le refus déchire l’être, cela Baal me l’a
+      dit, il faut accepter d’être déchiré,
+      d’être gâché, de ne plus être utile
+      mais inutile dépense, oui, et c’est peut-être
+      cela le début de la liberté, c’est une
+      naissance, voilà une image qui plairait à qui
+      vous savez. [...]
+    </blockquote>
+  </section>
 </article>
 <footer>
-  <p style="font-weight: bold; font-size: large;"><a href="/">Retour accueil</a></p>
-  <p>
-    <b>Parc (Promotion Arts &amp; Culture)</b><br />
-    14 rue Émile Desvaux - 75019 Paris
-    <br/>
-    <br/>
-    <a href="/parc/edition">
-      <img alt="Logo PARC Éditions" src="/images/1logo.jpeg">
-    </a>
-  </p>
-  <p style="font-weight: bold;">
-    <a href="/parc/commander">Commander</a><span style="font-weight: normal;"> chez l'éditeur</span><br/>
-    ou<br/>
-    Comptoir de vente&nbsp;: La Lucarne des Ecrivains, 115 rue de l'Ourcq - Tél /Fax&nbsp;: 01 40 05 91 29 /51
-  </p>
+  <section>
+    <h3>Disponible à La Lucarne des Ecrivains</h3>
+    <address>
+      <a href="https://goo.gl/maps/7q4K8UB4j5CGearNA">115 rue de l’Ourcq<br /> 75019 Paris</a>
+      <a href="tel:+33 6 88 23 52 45">06 88 23 52 45</a>
+      <a href="mailto:lalucarnedesecrivains1@gmail.com">Email</a>
+      <a href="https://lalucarnedesecrivains.wordpress.com/">Site Web</a>
+    </address>
+
+  </section>
+
+  <style>
+    nav {
+      text-align: center;
+      width: 100%;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid black;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      display: inline;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  </style>
+  <nav>
+    <ul>
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/parc">PARC</a></li>
+      <li><a href="/parc/commander">Commander</a></li>
+      <li><a href="/legalese">Mentions Légales</a></li>
+    </ul>
+  </nav>
 </footer>
 </body>
 </html>
