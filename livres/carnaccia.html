@@ -25,6 +25,36 @@
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
+      "breadcrumb": "Books > Marketing > JSON",
+      "mainEntity":{
+        "@type": "Book",
+        "author": "https://www.example.com/author.html",
+        "bookFormat": "https://schema.org/EBook",
+        "datePublished": "2001-10-01",
+        "image": "https://lacunar.org/images/covers/og/carnaccia-1000.webp",
+        "inLanguage":"French",
+        "isbn": "2912010128",
+        "name": "Carnaccia",
+        "numberOfPages": "144",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "price": "9.99",
+          "priceCurrency": "USD"
+        },
+        "publisher": "O'Json Publishing",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "12"
+        }
+      }
+    }
+  </script>
+  <!--
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
       "breadcrumb": "Lacunar > Parc Éditions > Livres > Carnaccia",
       "mainEntity":{
         "@type": "Book",
@@ -33,7 +63,7 @@
           "name": "Olivier Gambier"
         },
         "datePublished": "2001-10-01",
-        "image": "https://lacunar.org/images/covers/og/carnaccia.webp",
+        "image": "https://lacunar.org/images/covers/og/carnaccia-500.webp",
         "inLanguage":"French",
         "isbn": "2912010128",
         "name": "Carnaccia",
@@ -44,8 +74,11 @@
         }
       }
     }
-  </script>
-  <!--
+
+
+
+
+
         "bookFormat": "Paperback",
         "@id": "/livres/carnaccia",
         "url": "/livres/carnaccia",
@@ -67,55 +100,33 @@
         "description": "Un petit chef-d’œuvre comme Carnaccia, d’Olivier Gambier, est destiné à rester quasi ignoré. Dans un siècle, on le classera peut-être parmi les grands oubliés."
 
 
-<script type="application/ld+json">
-{
       "@context": "https://schema.org",
       "@type": "WebPage",
       "breadcrumb": "Books > Marketing > JSON",
       "mainEntity":{
-              "@type": "Book",
-              "author": "http://www.example.com/author.html",
-              "bookFormat": "http://schema.org/EBook",
-              "datePublished": "2015-05-01",
-              "image": "coverImage.jpg",
-              "inLanguage": "English",
-              "isbn": "00000000",
-              "name": "The Title of Book",
-              "numberOfPages": "1234",
-              "offers": {
-                "@type": "Offer",
-                "availability": "http://schema.org/InStock",
-                "price": "9.99",
-                "priceCurrency": "USD"
-              },
-              "publisher": "O'Json Publishing",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4",
-                "reviewCount": "12"
-              }
-            }
+        "@type": "Book",
+        "author": "http://www.example.com/author.html",
+        "bookFormat": "http://schema.org/EBook",
+        "datePublished": "2015-05-01",
+        "image": "coverImage.jpg",
+        "inLanguage": "English",
+        "isbn": "00000000",
+        "name": "The Title of Book",
+        "numberOfPages": "1234",
+        "offers": {
+          "@type": "Offer",
+          "availability": "http://schema.org/InStock",
+          "price": "9.99",
+          "priceCurrency": "USD"
+        },
+        "publisher": "O'Json Publishing",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "12"
+        }
+      }
     }
-</script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Book",
-      "@id": "/livres/carnaccia",
-      "url": "/livres/carnaccia",
-      "name": "Carnaccia",
-      "alternateName":"De l'eschatologie bien tempérée",
-      "image": "https://lacunar.org/images/covers/og/carnaccia.webp",
-      "author": {
-        "@type": "Person",
-        "name": "Olivier Gambier"
-      },
-      "inLanguage":"French",
-      "datePublished": "2001-10-01",
-      "description": "Un petit chef-d’œuvre comme Carnaccia, d’Olivier Gambier, est destiné à rester quasi ignoré. Dans un siècle, on le classera peut-être parmi les grands oubliés."
-    }
-  </script>
-
 
 
     {"@context":"https:\/\/schema.org",
@@ -146,7 +157,7 @@
   <meta property="og:url" content="https://lacunar.org/livres/carnaccia">
   <meta property="og:type" content="book">
   <meta property="og:description" content="Un petit chef-d’œuvre comme Carnaccia, d’Olivier Gambier, est destiné à rester quasi ignoré. Dans un siècle, on le classera peut-être parmi les grands oubliés.">
-  <meta property="og:image" content="https://lacunar.org/images/covers/og/carnaccia.webp">
+  <meta property="og:image" content="https://lacunar.org/images/covers/og/carnaccia-1000.webp">
 
   <meta property="book:author" content="https://twitter.com/MangledDeutz">
   <meta property="book:isbn" content="2912010128">
@@ -157,7 +168,7 @@
   <meta property="twitter:url" content="https://lacunar.org/livres/carnaccia">
   <meta name="twitter:title" content="Carnaccia">
   <meta name="twitter:description" content="Un petit chef-d’œuvre comme Carnaccia, d’Olivier Gambier, est destiné à rester quasi ignoré. Dans un siècle, on le classera peut-être parmi les grands oubliés.">
-  <meta name="twitter:image" content="https://lacunar.org/images/covers/og/carnaccia.webp">
+  <meta name="twitter:image" content="https://lacunar.org/images/covers/og/carnaccia-1000.webp">
   <style>
     /* Generic styling */
     html {
@@ -258,9 +269,11 @@
     main>strong:first-of-type {
       display: block;
       font-size: x-large;
+      font-family: Libertinus Sans, sans-serif;
     }
     main h1 {
       font-variant: all-small-caps;
+      font-family: Libertinus Sans, sans-serif;
       color: #af0000;
       font-size: xxx-large;
       margin: 0;
@@ -268,8 +281,8 @@
     main img {
       margin-bottom: 1rem;
       margin-top: 1rem;
-      width: 225px;
-      height: 362px;
+      width: 250px;
+      height: 410px;
     }
 
     /* Publisher Info Box */
@@ -429,7 +442,7 @@
   <main>
     <h1>Carnaccia</h1>
     <strong>Olivier Gambier</strong>
-    <img alt="Couverture Carnaccia" src="/images/covers/og/carnaccia.webp" />
+    <img alt="Couverture Carnaccia" src="/images/covers/og/carnaccia-500.webp" />
     <details>
       <summary><strong>Parc Édition</strong></summary>
       <dl>
