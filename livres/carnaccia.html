@@ -35,6 +35,7 @@
   <meta name="twitter:description" content="Un roman post-moderne - le choix de Pierre Jourde in Monde Diplomatique Janvier 2007">
   <meta name="twitter:image" content="https://lacunar.org/images/covers/og/carnaccia.webp">
   <style>
+    /* Generic styling */
     html {
       height: 100%;
     }
@@ -46,6 +47,7 @@
       text-align: justify;
       max-width: 1024px;
       margin: auto;
+      padding: 0.5rem;
     }
 
     a:link {
@@ -62,30 +64,63 @@
       color: #af0000;
     }
 
-    header {
+    h2 {
+      font-size: large;
+      margin-top: 3rem;
       text-align: center;
+      font-variant: small-caps;
+      width: 100%;
+      border-bottom: 1px solid black;
     }
 
+    mark {
+      font-style: italic;
+      background-color: transparent;
+      color: inherit;
+      font-weight: bold;
+    }
+
+    strong {
+      font-variant: small-caps;
+    }
+
+    main {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    aside {
+      padding-right: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      color: #29627e;
+      border: 1px solid black;
+    }
+
+    /* On desktop, add a little bit more padd, and make the aside float right */
+    @media only screen and (min-width: 600px) {
+      body {
+        padding: 2rem;
+      }
+      aside {
+        width: 50%;
+        float: right;
+        margin-right: 0;
+      }
+    }
+
+    /* Main section */
+    main>strong:first-of-type {
+      display: block;
+      font-size: x-large;
+    }
     main h1 {
       font-variant: all-small-caps;
       color: #af0000;
       font-size: xxx-large;
       margin: 0;
-    }
-
-    aside h1 {
-      font-size: large;
-    }
-
-    h2 {
-      margin: 0;
-      font-variant: small-caps;
-      font-size: large;
-    }
-
-    main {
-      text-align: center;
-      margin-bottom: 4rem;
     }
     main img {
       margin-bottom: 1rem;
@@ -93,6 +128,8 @@
       width: 225px;
       height: 362px;
     }
+
+    /* Publisher Info Box */
     main dt {
       display: none;
     }
@@ -110,7 +147,6 @@
       content: "\a(";
       white-space: pre;
     }
-
     main dd {
       display: inline;
       margin: 0;
@@ -137,47 +173,23 @@
       content: ")";
     }
 
-    mark {
-      font-style: italic;
-      background-color: transparent;
-      color: inherit;
-      font-weight: bold;
-    }
-
-    strong {
+    /* Pierre Jourde */
+    aside h1 {
+      font-size: large;
       font-variant: small-caps;
     }
-
-    main>strong:first-of-type {
-      display: block;
-      font-size: x-large;
+    aside blockquote:after {
+      content: "\00a0»"
+    }
+    aside blockquote:before {
+      content: "«\00a0"
     }
 
-    aside {
-      padding-right: 1rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
-      margin-bottom: 1rem;
-      padding-left: 1rem;
-      color: #29627e;
-      border: 1px solid black;
+    /* Presentation styling  */
+    article section:first-of-type h2 {
+      display: none;
     }
-
-    body {
-      padding: 0.5rem;
-    }
-    @media only screen and (min-width: 600px) {
-      aside {
-        width: 50%;
-        float: right;
-        margin-right: 0;
-      }
-      body {
-        padding: 2rem;
-      }
-    }
-
-    section > p:first-of-type::first-letter {
+    article section > p:first-of-type::first-letter {
       margin: 0;
       padding: 0;
       margin-top: -0.6rem;
@@ -185,63 +197,33 @@
       float: left;
       font-size: 300%;
     }
-    article section:first-of-type h3 {
-      display: none;
-    }
-    section:nth-of-type(2) h3 {
-      margin-top: 3rem;
-      text-align: center;
-      font-variant: small-caps;
-      width: 100%;
-      border-bottom: 1px solid black;
+
+    /* Extraits */
+    article section blockquote::first-letter {
+      margin: 0;
+      padding: 0;
+      margin-top: -0.6rem;
+      margin-bottom: -1.5rem;
+      margin-left: 1rem;
+      float: left;
+      font-size: 300%;
     }
 
-    footer h3 {
-      margin-top: 3rem;
-      text-align: center;
-      font-variant: small-caps;
-      width: 100%;
-      border-bottom: 1px solid black;
-    }
-
-    footer {
-    }
-
+    /* La lucarne */
     footer section {
+      border: 1px solid black;
+      padding: 1rem;
       text-align: center;
       margin: auto;
-      max-width: 50%
+      max-width: 50%;
     }
+
 
     footer section address {
       text-align: left;
     }
 
-
-    aside blockquote:after {
-      content: "\00a0»"
-    }
-
-    aside blockquote:before {
-      content: "«\00a0"
-    }
-
-    section:nth-of-type(2) blockquote::first-letter {
-      margin: 0;
-      padding: 0;
-      margin-top: -0.6rem;
-      margin-bottom: -1.5rem;
-      margin-left: 1rem;
-      float: left;
-      font-size: 300%;
-    }
-
-    footer section {
-      border: 1px solid black;
-      padding: 1rem;
-    }
-
-    footer section h3 {
+    footer section h2 {
       margin-top: 0;
     }
     footer section address a {
@@ -249,23 +231,23 @@
       margin-left: 2rem;
       margin-top: 15px;
     }
-
-    address a {
+    footer section address a {
       display: block;
     }
-
-    address a[href^="https://goo"]::before {
+    footer section address a[href^="https://goo"]::before {
       content: "🌍 ";
     }
-    address a[href^="https://la"]::before {
+    footer section address a[href^="https://la"]::before {
       content: "🌐 ";
     }
-    address a[href^="mailto"]::before {
+    footer section address a[href^="mailto"]::before {
       content: "📧 ";
     }
-    address a[href^="tel"]::before {
+    footer section address a[href^="tel"]::before {
       content: "📱 ";
     }
+
+    /* Bottom navigation */
     nav {
       text-align: center;
       width: 100%;
@@ -280,8 +262,8 @@
     nav li {
       padding: 1rem;
       display: inline;
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
     }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-14YCMGHCE9"></script>
@@ -304,7 +286,7 @@
     <strong>Olivier Gambier</strong>
     <img alt="Couverture Carnaccia" src="/images/covers/og/carnaccia.webp" />
     <details>
-      <summary>Un livre <strong>Parc</strong></summary>
+      <summary><strong>Parc Édition</strong></summary>
       <dl>
         <dt>Titre</dt>
         <dd>Carnaccia</dd>
@@ -344,7 +326,7 @@
     </blockquote>
   </aside>
   <section>
-    <h3>Présentation</h3>
+    <h2>Présentation</h2>
     <p>
       Aleph, plaie errante, se lie
       à Baal, démon affamé. C’est ensemble
@@ -376,7 +358,7 @@
     </p>
   </section>
   <section>
-    <h3>Extraits</h3>
+    <h2>Extraits</h2>
     <blockquote>
       J’errais depuis longtemps&nbsp;; je
       n’étais pas fatigué&nbsp;; je ne cherchais rien de
@@ -487,7 +469,7 @@
 </article>
 <footer>
   <section>
-    <h3>Disponible à La Lucarne des Ecrivains</h3>
+    <h2>Disponible à La Lucarne des Ecrivains</h2>
     <address>
       <a href="https://goo.gl/maps/7q4K8UB4j5CGearNA">115 rue de l’Ourcq, 75019 Paris</a>
       <a href="tel:+33 6 88 23 52 45">06 88 23 52 45</a>
