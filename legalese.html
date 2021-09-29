@@ -27,72 +27,286 @@
     gtag("config", "G-14YCMGHCE9");
   </script>
   <style>
-    body {
-      margin: auto;
-      border: 4px double black;
-      width: 750px;
-      padding: 10px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      text-align: justify;
-
-      color: rgb(0, 0, 0);
-      background-color: rgb(255, 204, 153);
+    /* Generic styling */
+    html {
+      height: 100%;
     }
+
+    body {
+      font-family: Libertinus Serif, serif;
+      background-color: rgb(255, 204, 153);
+      min-height: 100%;
+      text-align: justify;
+      max-width: 1024px;
+      margin: auto;
+      padding: 0.5rem;
+    }
+
     a:link {
-      color: #000033;
+      color: #af0000;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     a:active {
-      color: #000099;
+      color: #af0000;
     }
     a:visited {
-      color: #990099;
+      color: #af0000;
     }
 
-    article {
-    }
-    header {
-      text-align: center;
-    }
-    header h1 {
-      font-variant: small-caps;
-      font-style: italic;
-      color: #af0000;
-      font-size: xx-large;
-      font-weight: bold;
-    }
-    header h2 {
+    h2 {
       font-size: large;
+      margin-top: 3rem;
+      text-align: center;
+      font-variant: small-caps;
+      width: 100%;
+      border-bottom: 1px solid black;
+    }
+
+    mark {
+      font-style: italic;
+      background-color: transparent;
+      color: inherit;
       font-weight: bold;
     }
-    footer {
+
+    strong {
+      font-variant: small-caps;
+    }
+
+    main {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    aside {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 0rem;
+      color: #29627e;
+      border: 1px solid black;
+    }
+
+    hr {
+      border: none;
+      /*border-top: 3px double #333;*/
+      color: #333;
+      overflow: visible;
+      text-align: center;
+      height: 5px;
+      margin: auto;
+      width: 30%;
+    }
+
+    hr:after {
+      content: "§";
+      padding: 0 4px;
+      position: relative;
+      top: -13px;
+    }
+
+    /* On desktop, add a little bit more padd, and make the aside float right */
+    @media only screen and (min-width: 600px) {
+      body {
+        padding: 2rem;
+      }
+      aside {
+        width: 50%;
+        float: right;
+        margin-right: 0;
+      }
+    }
+
+    /* Main section */
+    main>strong:first-of-type {
+      display: block;
+      font-size: x-large;
+      font-family: Libertinus Sans, sans-serif;
+    }
+    main h1 {
+      font-variant: all-small-caps;
+      font-family: Libertinus Sans, sans-serif;
+      color: #af0000;
+      font-size: xxx-large;
+      margin: 0;
+    }
+    main img {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      width: 250px;
+      height: 410px;
+    }
+
+    /* Publisher Info Box */
+    main dt {
+      display: none;
+    }
+    main dt::after {
+      content: ": ";
+    }
+    main dt:nth-of-type(6) {
+      display: inline;
+    }
+    main dt:nth-of-type(8) {
+      display: inline;
+      font-size: small;
+    }
+    main dt:nth-of-type(8)::before {
+      content: "\a(";
+      white-space: pre;
+    }
+    main dd {
+      display: inline;
+      margin: 0;
+    }
+    main details dd:nth-of-type(1), main details dd:nth-of-type(2)  {
+      display: none;
+    }
+    main dd:not(:last-of-type):not(:first-of-type)::after {
+      content: ","
+    }
+    main dd:first-of-type {
+      display: block
+    }
+    main dd:nth-of-type(6)::after {
+      content: "" !important;
+    }
+    main dd:nth-of-type(7) {
+      display: none;
+    }
+    main dd:nth-of-type(8){
+      font-size: small;
+    }
+    main dd:nth-of-type(8)::after {
+      content: ")";
+    }
+
+    /* Pierre Jourde */
+    aside h1 {
+      font-size: large;
+      font-variant: small-caps;
+      margin: 2rem 0 0 0;
       text-align: center;
     }
-    blockquote:before{
+    aside blockquote:after {
+      content: "\00a0»"
+    }
+    aside blockquote:before {
       content: "«\00a0"
     }
-    blockquote:after{
-      content: "\00a0»"
+
+    /* Presentation styling  */
+    article section:first-of-type h2 {
+      display: none;
+    }
+    article section > p:first-of-type::first-letter {
+      margin: 0;
+      padding: 0;
+      margin-top: -0.6rem;
+      margin-bottom: -1.5rem;
+      float: left;
+      font-size: 300%;
+    }
+
+    /* Extraits */
+    article section blockquote::first-letter {
+      margin: 0;
+      padding: 0;
+      margin-top: -0.6rem;
+      margin-bottom: -1.5rem;
+      margin-left: 1rem;
+      float: left;
+      font-size: 300%;
+    }
+
+    /* La lucarne */
+    footer section {
+      border: 1px solid black;
+      padding: 1rem;
+      text-align: center;
+      margin: auto;
+      max-width: 50%;
+    }
+
+
+    footer section address {
+      text-align: left;
+    }
+
+    footer section h2 {
+      margin-top: 0;
+    }
+    footer section address a {
+      font-style: normal;
+      margin-left: 2rem;
+      margin-top: 15px;
+    }
+    footer section address a {
+      display: block;
+    }
+    footer section address a[href^="https://goo"]::before {
+      content: "🌍 ";
+    }
+    footer section address a[href^="https://la"]::before {
+      content: "🌐 ";
+    }
+    footer section address a[href^="mailto"]::before {
+      content: "📧 ";
+    }
+    footer section address a[href^="tel"]::before {
+      content: "📱 ";
+    }
+
+    /* Bottom navigation */
+    nav {
+      text-align: center;
+      width: 100%;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid black;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      padding: 1rem;
+      display: inline;
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
     }
   </style>
 </head>
 <header>
-  <h1>Mentions Légales</h1>
 </header>
 <article>
-  <hr />
-  <p>
-    Le site web lacunar.org est l'œuvre de <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>, décédé en Septembre 2021.<br /><br />
-    Il est aujourd'hui maintenu tel quel par sa famille et ses amis, à sa mémoire.<br/>
-    Pour toute question, remarque, ou réclamation, relativement à son contenu, nous vous invitons à nous contacter à cette adresse: <a href="mailto:cheuksin@pm.me">cheuksin@pm.me</a><br />
-
-  </p>
-  <hr />
-  <p>
-    The website lacunar.org was published by <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>.<br/><br/>
-    John passed in September 2021, and the website is now hosted as-is by his friends and families, dedicated to his memory.<br/>
-    For any question, inquiry or complaint about the content itself, please email: <a href="mailto:cheuksin@pm.me">cheuksin@pm.me</a>
-  </p>
+  <main>
+    <section>
+      <h1>Mentions Légales</h1>
+      <p style="text-align: justify;">
+        Le site web <a href="https://lacunar.org">lacunar.org</a> est l'œuvre de <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>, décédé en Septembre 2021.<br />
+        Il est aujourd'hui maintenu tel quel par sa famille et ses amis, à sa mémoire.<br/>
+        Pour toute question, remarque, ou réclamation, relativement à son contenu, nous vous invitons à nous contacter à cette adresse:
+        <address><a href="mailto:cheuksin@pm.me">cheuksin@pm.me</a></address>
+      </p>
+    </section>
+    <hr/>
+    <section>
+      <p style="text-align: justify;">
+        The website <a href="https://lacunar.org">lacunar.org</a> was published by <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>.<br/>
+        John passed in September 2021, and the website is now hosted as-is by his friends and families, dedicated to his memory.<br/>
+        For any question, inquiry or complaint about the content itself, please email:
+        <address>
+          <a href="mailto:cheuksin@pm.me">cheuksin@pm.me</a>
+        </address>
+      </p>
+    </section>
+  </main>
 </article>
 <footer>
 </footer>
