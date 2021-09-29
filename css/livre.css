@@ -179,8 +179,6 @@ footer section {
 footer section address {
   text-align: left;
 }
-
-
 aside blockquote:after {
   content: "\00a0»"
 }
