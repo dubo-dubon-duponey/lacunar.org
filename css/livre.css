@@ -1,22 +1,12 @@
-html {
-  height: 100%;
+h1 {
+  font-variant: all-small-caps;
+  font-family: Tex Gyre Adventor, "Century Gothic", Futura, sans-serif;
+  color: #af0000;
 }
 
-body {
-  font-family: Libertinus Serif, serif;
-  background-color: rgb(255, 204, 153);
-  min-height: 100%;
-  text-align: justify;
-  max-width: 1024px;
-  margin: auto;
-}
-
+/* Links */
 a:link {
   color: #af0000;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
 }
 a:active {
   color: #af0000;
@@ -25,37 +15,40 @@ a:visited {
   color: #af0000;
 }
 
-header {
+/* Rulers */
+hr {
+  border: none;
+  /*border-top: 3px double #333;*/
+  color: #333;
+  overflow: visible;
   text-align: center;
+  height: 5px;
+  margin: auto;
+  width: 30%;
+}
+hr:after {
+  content: "§";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
 }
 
-main h1 {
-  font-variant: all-small-caps;
-  color: #af0000;
-  font-size: xxx-large;
-  margin: 0;
-}
-
-aside h1 {
-  font-size: large;
-}
-
-h2 {
-  margin: 0;
-  font-variant: small-caps;
-  font-size: large;
-}
-
+/* Main section */
 main {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+main>strong:first-of-type {
+  display: block;
+  font-size: x-large;
 }
 main img {
   margin-bottom: 1rem;
   margin-top: 1rem;
-  width: 225px;
-  height: 362px;
 }
+
+/* Publisher Info Box */
 main dt {
   display: none;
 }
@@ -73,7 +66,6 @@ main dt:nth-of-type(8)::before {
   content: "\a(";
   white-space: pre;
 }
-
 main dd {
   display: inline;
   margin: 0;
@@ -100,109 +92,38 @@ main dd:nth-of-type(8)::after {
   content: ")";
 }
 
-mark {
-  font-style: italic;
-  background-color: transparent;
-  color: inherit;
-  font-weight: bold;
-}
-
-strong {
-  font-variant: small-caps;
-}
-
-main>strong:first-of-type {
-  display: block;
-  font-size: x-large;
-}
-
-aside {
-  padding-right: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-  color: #29627e;
-  border: 1px solid black;
-}
-
-body {
-  padding: 0.5rem;
-}
-@media only screen and (min-width: 600px) {
-  aside {
-    width: 50%;
-    float: right;
-    margin-right: 0;
-  }
-  body {
-    padding: 2rem;
-  }
-}
-
-section > p:first-of-type::first-letter {
-  margin: 0;
-  padding: 0;
-  margin-top: -0.6rem;
-  margin-bottom: -1.5rem;
-  float: left;
-  font-size: 300%;
-}
-article section:first-of-type h3 {
+/* Presentation  */
+article section:first-of-type h2 {
   display: none;
 }
-section:nth-of-type(2) h3 {
-  margin-top: 3rem;
-  text-align: center;
-  font-variant: small-caps;
-  width: 100%;
-  border-bottom: 1px solid black;
-}
-
-footer h3 {
-  margin-top: 3rem;
-  text-align: center;
-  font-variant: small-caps;
-  width: 100%;
-  border-bottom: 1px solid black;
-}
-
-footer {
-}
-
-footer section {
-  text-align: center;
-  margin: auto;
-  max-width: 50%
-}
-
-footer section address {
-  text-align: left;
-}
-aside blockquote:after {
-  content: "\00a0»"
-}
-
-aside blockquote:before {
-  content: "«\00a0"
-}
-
-section:nth-of-type(2) blockquote::first-letter {
-  margin: 0;
+article section > p:first-of-type::first-letter {
+  margin: -0.6rem 0 -1.5rem;
   padding: 0;
-  margin-top: -0.6rem;
-  margin-bottom: -1.5rem;
-  margin-left: 1rem;
   float: left;
   font-size: 300%;
 }
 
+/* Extraits */
+article section blockquote::first-letter {
+  margin: -0.6rem 0 -1.5rem 1rem;
+  padding: 0;
+  float: left;
+  font-size: 300%;
+}
+
+/* La lucarne */
 footer section {
   border: 1px solid black;
   padding: 1rem;
+  text-align: center;
+  margin: auto;
+  max-width: 50%;
+}
+footer section address {
+  text-align: left;
 }
 
-footer section h3 {
+footer section h2 {
   margin-top: 0;
 }
 footer section address a {
@@ -210,37 +131,18 @@ footer section address a {
   margin-left: 2rem;
   margin-top: 15px;
 }
-
-address a {
+footer section address a {
   display: block;
 }
-
-address a[href^="https://goo"]::before {
+footer section address a[href^="https://goo"]::before {
   content: "🌍 ";
 }
-address a[href^="https://la"]::before {
+footer section address a[href^="https://la"]::before {
   content: "🌐 ";
 }
-address a[href^="mailto"]::before {
+footer section address a[href^="mailto"]::before {
   content: "📧 ";
 }
-address a[href^="tel"]::before {
+footer section address a[href^="tel"]::before {
   content: "📱 ";
-}
-nav {
-  text-align: center;
-  width: 100%;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid black;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-nav li {
-  padding: 1rem;
-  display: inline;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
