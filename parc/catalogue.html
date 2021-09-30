@@ -37,24 +37,21 @@
       min-height: 100%;
       text-align: justify;
       max-width: 1024px;
-      margin: auto;
-      padding: 0.5rem;
+      padding: 0.5rem 0.5rem 2rem;
       color: #ffffff;
+      margin: 2rem auto;
     }
 
     a:link {
-      color: #cf0000;
+      color: #ffff66;
       text-decoration: none;
     }
     a:hover {
-      color: #ff0000;
+      color: #ffffff;
       text-decoration: underline;
     }
-    a:active {
-      color: #cf0000;
-    }
     a:visited {
-      color: #cf0000;
+      color: #aaaa22;
     }
 
     h2 {
@@ -77,6 +74,7 @@
       font-variant: small-caps;
       display: block;
       text-align: center;
+      font-family: Tex Gyre Adventor, "Century Gothic", Futura, sans-serif;
     }
 
     aside {
@@ -111,11 +109,19 @@
 
     h1 {
       font-variant: all-small-caps;
-      font-family: Libertinus Sans, sans-serif;
-      color: #af0000;
+      font-family: Tex Gyre Adventor, "Century Gothic", Futura, sans-serif;
+      color: grey;
       font-size: xxx-large;
       margin: 0;
       text-align: center;
+    }
+
+    h3 {
+      font-size: large;
+      margin-top: 3rem;
+      border-bottom: 3px solid white;
+      font-variant: small-caps;
+      width: 100%;
     }
 
     .parc_logo {
@@ -137,6 +143,32 @@
       align-self: flex-end;
     }
 
+    /* Bottom navigation */
+    nav {
+      text-align: center;
+      width: 100%;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid black;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      padding: 1rem;
+      display: inline;
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+    }
+
+    article ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      font-size: large;
+      line-height: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -176,8 +208,6 @@
     </ul>
   </section>
 
-  <hr />
-
   <section>
     <h3>Collection grise 10x15</h3>
     <ul>
@@ -205,8 +235,6 @@
     </ul>
   </section>
 
-  <hr />
-
   <section>
     <h3>Collection grise 15x21</h3>
     <ul>
@@ -225,8 +253,6 @@
     </ul>
   </section>
 
-  <hr />
-
   <section>
     <h3>Le Document Parc</h3>
     <ul>
@@ -236,16 +262,14 @@
     </ul>
   </section>
 
-  <hr />
-
   <section>
     <h3>Paul Vermont</h3>
-    <p>
-      <a href="">Accéder au catalogue <cite>Paul Vermont</cite></a> (1975-1981).
-    </p>
+    <ul>
+      <li>
+        <a href="/paul-vermont-edition">Accéder au catalogue <cite>Paul Vermont</cite></a> (1975-1981).
+      </li>
+    </ul>
   </section>
-
-  <hr />
 
   <section>
     <h3>Textes en ligne</h3>
@@ -312,10 +336,20 @@
 
 <footer>
   <nav>
-    <a href="/parc/commander">Historique Parc</a>
-    <a href="/parc/historique">Commander</a>
-    <a href="/parc">Accueil Parc</a>
-    <a href="/">Accueil Lacunar</a>
+    <ul>
+      <li>
+        <a href="/parc/commander">Historique Parc</a>
+      </li>
+      <li>
+        <a href="/parc/historique">Commander</a>
+      </li>
+      <li>
+        <a href="/parc">Accueil Parc</a>
+      </li>
+      <li>
+        <a href="/">Accueil Lacunar</a>
+      </li>
+    </ul>
   </nav>
 </footer>
 </body>
