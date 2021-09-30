@@ -30,10 +30,16 @@ article ul {
   line-height: 2rem;
 }
 
+/* Our use of strong may be problematic */
 strong {
   display: block;
   text-align: center;
   font-family: Tex Gyre Adventor, "Century Gothic", Futura, sans-serif;
+}
+
+/* Given we did override this, we need it back here - probably should have  */
+details strong {
+  display: inline;
 }
 /* XXX */
 
@@ -50,4 +56,3 @@ a:hover {
 a:visited {
   color: #aaaa66;
 }
-
