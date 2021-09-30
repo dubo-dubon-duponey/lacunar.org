@@ -4,15 +4,6 @@
 {
   font-family: "Tex Gyre Adventor";
   font-style:  normal;
-  font-weight: 400;
-  src: local("Tex Gyre Adventor Regular"),
-  url("/fonts/TeX-Gyre-Adventor/texgyreadventor-regular.otf") format("opentype");
-}
-
-@font-face
-{
-  font-family: "Tex Gyre Adventor";
-  font-style:  normal;
   font-weight: normal;
   src: local("Tex Gyre Adventor Regular"),
   url("/fonts/TeX-Gyre-Adventor/texgyreadventor-regular.otf") format("opentype");
@@ -23,7 +14,7 @@
   font-family: "Tex Gyre Adventor";
   font-style:  normal;
   font-weight: bold;
-  src: local("Tex Gyre Adventor Regular"),
+  src: local("Tex Gyre Adventor Bold"),
   url("/fonts/TeX-Gyre-Adventor/texgyreadventor-bold.otf") format("opentype");
 }
 
@@ -32,7 +23,7 @@
   font-family: "Tex Gyre Adventor";
   font-style:  italic;
   font-weight: normal;
-  src: local("Tex Gyre Adventor Regular"),
+  src: local("Tex Gyre Adventor Italic"),
   url("/fonts/TeX-Gyre-Adventor/texgyreadventor-italic.otf") format("opentype");
 }
 
@@ -41,6 +32,6 @@
   font-family: "Tex Gyre Adventor";
   font-style:  italic;
   font-weight: bold;
-  src: local("Tex Gyre Adventor Regular"),
+  src: local("Tex Gyre Adventor Bold Italic"),
   url("/fonts/TeX-Gyre-Adventor/texgyreadventor-bolditalic.otf") format("opentype");
 }
