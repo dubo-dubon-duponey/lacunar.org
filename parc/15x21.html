@@ -50,6 +50,24 @@
       text-align: center;
     }
 
+    @media only screen and (max-width: 800px) {
+      article section img {
+        float: inherit;
+        display: block;
+        margin: auto;
+      }
+      article section {
+        margin-left: inherit;
+        width: inherit;
+      }
+      article section details {
+        float: inherit;
+        margin-left: 40%;
+        padding-left: inherit;
+        margin-bottom: 1rem;
+      }
+    }
+
     /* Duplicates some of the behaviors in livres */
     article section details summary {
       text-align: left;
@@ -71,11 +89,26 @@
       color: #af0000;
     }
 
+    h1 {
+      color: grey;
+    }
+
     section > strong {
       margin-bottom: 2rem;
       font-size: x-large;
       font-family: inherit;
     }
+
+    a:link {
+      color: #999955;
+    }
+    a:hover {
+      color: #999955;
+    }
+    a:visited {
+      color: #999955;
+    }
+
   </style>
 </head>
 <body>
