@@ -16,6 +16,7 @@ h1 {
   font-size: 4.7rem;
   color: black;
   font-family: "Tex Gyre Adventor", "Century Gothic", Futura, sans-serif;
+  font-variant: normal;
   font-weight: bold;
   text-align: center;
   line-height: 6.5rem;
