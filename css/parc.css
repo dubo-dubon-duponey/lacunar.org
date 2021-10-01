@@ -57,3 +57,7 @@ a:hover {
 a:visited {
   color: #aaaa66;
 }
+
+footer {
+  font-variant: small-caps;
+}
