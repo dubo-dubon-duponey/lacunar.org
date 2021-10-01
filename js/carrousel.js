@@ -1,6 +1,7 @@
 var Slideshow = function(anc){
   const anchor = anc;
   let slideIndex = 0;
+  let speed = window.overspeed ? window.overspeed : 3000;
 
   let trigger;
 
@@ -32,7 +33,7 @@ var Slideshow = function(anc){
       return;
     if (!noKick)
       showSlides();
-    trigger = setInterval(showSlides, 3000); // Change image every 2 seconds
+    trigger = setInterval(showSlides, speed);
   }
 
   const stop = this.stop = function(){
