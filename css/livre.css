@@ -146,3 +146,28 @@ footer section address a[href^="mailto"]::before {
 footer section address a[href^="tel"]::before {
   content: "📱 ";
 }
+
+.parc_logo {
+  margin: auto;
+  background-color: grey;
+  display: flex;
+  width: 12rem;
+  height: 12rem;
+  border: 5px solid #222222;
+}
+.parc_logo * {
+  font-size: 4.7rem;
+  color: black;
+  font-family: "Tex Gyre Adventor", "Century Gothic", Futura, sans-serif;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: center;
+  line-height: 6.5rem;
+  width: 100%;
+  align-self: flex-end;
+}
+
+header strong {
+  text-align: center;
+  display: block;
+}
