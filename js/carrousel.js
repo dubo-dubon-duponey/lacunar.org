@@ -1,5 +1,5 @@
 var Slideshow = function(anc){
-  const anchor = anc ? anc : document.querySelector("body :first-child");
+  const anchor = anc;
   let slideIndex = 0;
 
   let trigger;
@@ -18,10 +18,12 @@ var Slideshow = function(anc){
 
   const prev = anchor.getElementsByClassName("prev")[0];
   const next = anchor.getElementsByClassName("next")[0];
+  console.warn("THIS IS NEXT", next);
   prev.addEventListener("click", function(){
     showSlides(-1)
   });
   next.addEventListener("click", function(){
+    console.warn("UUUI");
     showSlides(1)
   });
 
@@ -30,7 +32,7 @@ var Slideshow = function(anc){
       return;
     if (!noKick)
       showSlides();
-    trigger = setInterval(showSlides, 5000); // Change image every 2 seconds
+    trigger = setInterval(showSlides, 3000); // Change image every 2 seconds
   }
 
   const stop = this.stop = function(){
