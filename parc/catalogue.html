@@ -31,12 +31,51 @@ Collection Grise, 10 x 15, Tetsuo-Marcel Kato, Friedrich Nietzsche, Emil Georg, 
     gtag("config", "G-14YCMGHCE9");
   </script>
   <link rel="stylesheet" href="/css/parc.css">
+  <link rel="stylesheet" href="/css/carrousel.css">
+  <script src="/js/carrousel.js"></script>
   <style>
     h1 {
       color: grey;
     }
     h2 {
       border-bottom: 3px solid;
+    }
+    h3 {
+      clear: both;
+    }
+
+    .livres_slide img {
+      height: 20rem;
+    }
+
+    .slides {
+      margin: auto;
+      /*width: 15rem;*/
+      text-align: center;
+    }
+    @media only screen and (min-width: 600px) {
+      .livres_slide {
+        clear: left;
+        float: right;
+        margin-bottom: 2rem;
+      }
+
+      section:nth-of-type(2n+1) .livres_slide {
+        clear: right;
+        float: left;
+        margin-bottom: 2rem;
+      }
+      .livres_slide + h3 {
+        width: 70%;
+      }
+      section:nth-of-type(2n+2) .livres_slide + h3, section:nth-of-type(2n+2) .livres_slide + h3 + ul{
+        clear: left;
+        margin-right: 30%;
+      }
+      section:nth-of-type(2n+3) .livres_slide + h3, section:nth-of-type(2n+3) .livres_slide + h3 + ul{
+        clear: right;
+        margin-left: 30%;
+      }
     }
   </style>
 </head>
@@ -68,7 +107,16 @@ Collection Grise, 10 x 15, Tetsuo-Marcel Kato, Friedrich Nietzsche, Emil Georg, 
       </li>
     </ul>
   </section>
-  <section>
+  <section id="pochparc">
+    <section class="livres_slide" id="poch_parc17">
+      <div class="slideshow-container">
+        <div class="slides fade"><a href="/livres/carnaccia"><img alt="Carnaccia" src="/images/covers/og/carnaccia-500.webp"></a></div>
+        <div class="slides fade"><a href="/livres/dans_mon_chien"><img alt="Dans mon chien" src="/images/covers/og/dans_mon_chien.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/petit_camp"><img alt="Petit Camp" src="/images/covers/og/petit_camp.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/la_revanche_du_neandertal"><img alt="La Revanche du Néandertal" src="/images/covers/og/neandertal.jpg"></a></div>
+        <a class="prev">&#10094;</a><a class="next">&#10095;</a>
+      </div>
+    </section>
     <h3>Morsure, PochParc17</h3>
     <ul>
       <li>
@@ -84,6 +132,16 @@ Collection Grise, 10 x 15, Tetsuo-Marcel Kato, Friedrich Nietzsche, Emil Georg, 
         <a href="/livres/carnaccia"><cite>Carnaccia</cite></a>, Olivier Gambier
       </li>
     </ul>
+  </section>
+  <section>
+    <section class="livres_slide" id="centtrentecinq">
+      <div class="slideshow-container">
+        <div class="slides fade"><a href="/livres/haut_risque"><img alt="Haut Risque" src="/images/covers/og/haut_risque.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/la_desolation_des_singes"><img alt="La Désolation des Singes" src="/images/covers/og/la_desolation_des_singes.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/lovepointnet"><img alt="Lovepointnet" src="/images/covers/og/lovepointnet.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/dans_la_douceur_du_soir"><img alt="Dans la douceur du soir" src="/images/covers/og/dans_la_douceur_du_soir.jpg"></a></div><a class="prev">&#10094;</a><a class="next">&#10095;</a>
+      </div>
+    </section>
     <h3>Morsure, 135&nbsp;x&nbsp;195</h3>
     <ul>
       <li>
@@ -102,6 +160,18 @@ Collection Grise, 10 x 15, Tetsuo-Marcel Kato, Friedrich Nietzsche, Emil Georg, 
   </section>
 
   <section>
+    <section class="livres_slide" id="gris10">
+      <div class="slideshow-container">
+        <div class="slides fade"><a href="/livres/mort_parce_que_bete"><img alt="Mort parce que Bête" src="/images/covers/og/mort_parce_que_bete.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/traite_de_bouddhisme_a_l_usage_du_bourgeois_d_occident"><img alt="Traîté de Bouddhisme" src="/images/covers/og/traite_de_bouddhisme.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/le_marche_de_la_detresse"><img alt="Le marché de la détresse" src="/images/covers/og/marche_de_la_detresse.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/l_evangile_selon_pitbull"><img alt="L'Évangile selon Pitbull" src="/images/covers/og/evangile_pittbull.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/conseils_au_collegien"><img alt="Conseils au Collégien" src="/images/covers/og/conseils_au_collegien.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/mars_ou_creve"><img alt="Mars ou crève" src="/images/covers/og/mars_ou_creve.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/declaration_universelle_des_droits_du_cochon"><img alt="Déclaration universelle des droits du cochon" src="/images/covers/og/droits_du_cochon.jpg"></a></div>
+        <a class="prev">&#10094;</a><a class="next">&#10095;</a>
+      </div>
+    </section>
     <h3>Collection grise 10x15</h3>
     <ul>
       <li>
@@ -114,10 +184,10 @@ Collection Grise, 10 x 15, Tetsuo-Marcel Kato, Friedrich Nietzsche, Emil Georg, 
         <a href="/livres/le_marche_de_la_detresse"><cite>Le marché de la détresse</cite></a>, Emil Georg
       </li>
       <li>
-        <a href="/livres/l_evangile_selon_pitbull"><cite>L'Evangile selon Pitbull</cite></a>, Felix Katzmann
+        <a href="/livres/l_evangile_selon_pitbull"><cite>L'Évangile selon Pitbull</cite></a>, Felix Katzmann
       </li>
       <li>
-        <a href="/livres/conseils_au_collegien"><cite>Conseil au Collégien</cite></a>, Docteur&nbsp;Amédée&nbsp;Fargue
+        <a href="/livres/conseils_au_collegien"><cite>Conseils au Collégien</cite></a>, Docteur&nbsp;Amédée&nbsp;Fargue
       </li>
       <li>
         <a href="/livres/mars_ou_creve"><cite>Mars ou crève</cite></a>, Alexandre Zheimer
@@ -129,6 +199,15 @@ Collection Grise, 10 x 15, Tetsuo-Marcel Kato, Friedrich Nietzsche, Emil Georg, 
   </section>
 
   <section>
+    <section class="livres_slide" id="gris15">
+      <div class="slideshow-container">
+        <div class="slides fade"><a href="/livres/la_main_d_hermes"><img alt="La Main d'Hermès" src="/images/covers/og/la_main_d_hermes.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/lettres_de_rupture_et_autres_produits_finis"><img alt="Lettres de Rupture…" src="/images/covers/og/lettres_de_rupture.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/amour_sevices_morgue"><img alt="Amour, Sévices & Morgue" src="/images/covers/og/amour_sevices_morgue.jpg"></a></div>
+        <div class="slides fade"><a href="/livres/proces"><img alt="Procès" src="/images/covers/og/proces.jpg"></a></div>
+        <a class="prev">&#10094;</a><a class="next">&#10095;</a>
+      </div>
+    </section>
     <h3>Collection grise 15x21</h3>
     <ul>
       <li>
