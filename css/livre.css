@@ -132,7 +132,7 @@ footer section address a {
   margin-top: 15px;
 }
 footer section address a {
-  display: block;
+/*  display: block;*/
 }
 footer section address a[href^="https://goo"]::before {
   content: "🌍 ";
