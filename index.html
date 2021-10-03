@@ -42,175 +42,312 @@
       background-image: url(/images/galcouv.jpg);
       background-color: #ffffcc;
     }
+    .commentary {
+      border: 1px solid white;
+      padding: 0.75rem;
+      text-align: justify;
+      vertical-align: middle;
+    }
+
+    .parc_logo {
+      margin: auto;
+      background-color: grey;
+      display: flex;
+      width: 12rem;
+      height: 12rem;
+      border: 5px solid #222222;
+    }
+    .parc_logo * {
+      font-size: 4.7rem;
+      color: black;
+      font-family: "Tex Gyre Adventor", "Century Gothic", Futura, sans-serif;
+      font-variant: normal;
+      font-weight: bold;
+      text-align: center;
+      line-height: 6.5rem;
+      width: 100%;
+      align-self: flex-end;
+    }
+
+    section h2 {
+      border-bottom: 0;
+      margin: 0.5rem 0;
+      color: yellow;
+      font-variant: all-small-caps;
+      font-size: x-large;
+    }
+    section .commentary {
+      vertical-align: top;
+      text-align: left;
+    }
+
+    section .commentary li {
+      line-height: 1.75rem;
+    }
+
+    section .commentary img {
+      margin: 1rem 0;
+    }
+
+    .livres_slide img {
+      height: 200px;
+    }
+
+    .runbaby {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    .runbaby div {
+      display: inline;
+    }
+
+    .runbaby img {
+      height: 150px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      .commentary {
+        display: table-cell;
+      }
+      div.commentary + .commentary  {
+        width: 45%;
+      }
+    }
+
   </style>
+  <link rel="stylesheet" href="/css/carrousel.css">
+  <script src="/js/carrousel.js"></script>
 </head>
 <body>
-<div style="color: black; border: 10px solid black; margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px; background-color: white; width: 100%;">Septembre 2021, John nous a quitté.<br /><br />Ce site qu'il aimait tant bricoler sera maintenu en ligne, tel quel, aussi longtemps que possible, en hommage à notre ami disparu.</div>
-<br />
-<p style="text-align: center;">
-  <a href="/miscellanees"><img alt="Logo Lacunar" src="/images/lacuncouv.jpg" height="76" width="600"></a>
-</p>
 
-<center>
-  <p style="font-weight: bold;">(Langages Anthropologiques, Culturels, Narratifs) - (Languages - Anthropology - Culture - Narration)</p>
+<header style="margin: auto; width: 100%; display: block;">
+  <h1 style="font-family: Libertinus,serif; font-weight: bold; background-color: red; font-variant: all-small-caps; color: black; font-size: 6.5rem; margin: auto; line-height: 7.5rem;">
+    <a style="color: black;" href="/miscellanees">Lacunar</a>
+  </h1>
+  <p style="text-align: center;">
+    <strong>Langages Anthropologiques, Culturels, Narratifs</strong>
+    <br />
+    <strong>Languages&nbsp;: Anthropology - Culture - Narration</strong>
+  </p>
+</header>
+
+<article>
+
+  <section>
+    <div class="commentary">
+      <h2>Présentation</h2>
+      <ul>
+        <li>
+          <a href="/miscellanees">Miscellanées</a>
+        </li>
+        <li>
+          <a href="/quid-lacunar">Quid-Lacunar</a>
+        </li>
+        <li>
+          <a href="/parc/morsure">Édition</a>
+        </li>
+        <li>
+          <a href="/textes">Textes On-Line</a>
+        </li>
+        <li>
+          <a href="/john_gelder-biographie">Biographie John Gelder</a>
+        </li>
+      </ul>
+      <h2>Nommer...</h2>
+      <ul>
+        <li>
+          <a href="/homonovus">Prosthésis</a>
+          <span style="font-size: x-small; color: #d6d600;">(English/Français)</span>
+        </li>
+        <li>
+          <a href="/homonovus">Homonovus
+            <img alt="Homonovus" style="width: 175px; height: 127px;" src="/images/homonov.jpg" /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="commentary">
+      <h2>Philosophie des techniques</h2>
+      <ul>
+        <li>
+          <a href="/emurgence">Emergence, émurgence</a>
+        </li>
+        <li>
+          <a href="/hominisation">L'Hominisation comme maladie</a>
+        </li>
+        <li>
+          <a href="/livres/le_marche_de_la_detresse">Marché de la détresse</a>
+        </li>
+        <li>
+          <a href="/edouard-avdeew.interview">Edouard d'Avdeew </a>(Architecte-Paysagiste)
+        </li>
+        <li>
+          <a href="/ancestrales">Ancestrales</a>
+        </li>
+        <li>
+          <a href="/horizon">Horizon</a>
+        </li>
+        <li>
+          <a href="/empiredudefaut">L'Empire du défaut</a>
+        </li>
+        <li>
+          <a href="/mediastase">Médiastase</a>
+          <span style="font-size: x-small; color: #d6d600;">(English/Français)</span>
+        </li>
+        <li>
+          <a href="/ledarwinnouveau">Le Darwin nouveau est arrivé</a>
+          <span style="font-size: x-small; color: #d6d600;">(projet)</span>
+        </li>
+        <li>
+          <img alt="homo-" style="width: 72px; height: 96px;" src="/images/homo.jpg">
+          -<a href="/erectus">Erectus</a>
+        </li>
+      </ul>
+    </div>
+    <div class="commentary" style="text-align: center;">
+      <h2>Arts Plastiques</h2>
+      <ul>
+        <li>
+          <a href="/creprocruste">
+            <img alt="Procruste(s), Bob Cremean" src="/images/o3heads.jpg" height="48" width="69" />
+            -Procruste(s) : Robert Cremean
+          </a>
+          <span style="font-size: x-small; color: #d6d600;">(English/Français)</span>
+        </li>
+        <li>
+          <a href="/pellican">
+            <img src="/images/pelcari.jpg" height="58" width="77" />
+            -La Machine à faire des
+            dieux</a>
+        </li>
+        <li>
+          <a href="/bolivie">
+            <img src="/images/bolfilgrot.jpg" height="61" width="74" />-
+            Bolivia</a>
+          <span style="font-size: x-small; color: #d6d600;">(English/Français)</span>
+        </li>
+        <li>
+          <a href="/regards-d-enfants">
+            <img style="width: 84px; height: 64px;" src="/images/esapavisagegamin.jpg" />
+            -Regards d'enfants
+          </a>
+        </li>
+        <li>
+          <a href="/textes/un_voyageur_solitaire">
+            <img style="width: 89px; height: 58px;" alt="Alex Barbier gouaches pour &quot;Le Voyageur Solitaire&quot; d'Orcan" src="/images/voyageurab1.jpg">
+            -Un Voyageur solitaire…
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr />
+  <section>
+    <header>
+      <a href="/parc">
+        <h1 class="parc_logo"><span>Parc</span></h1>
+      </a>
+    </header>
+
+    <strong style="text-align: center; display: block;">Promotion Arts&nbsp;&&nbsp;Culture</strong>
+
+    <div class="runbaby">
+      <div class="slides fade"><a href="/livres/dans_la_douceur_du_soir"><img alt="Dans la douceur du soir" src="/images/covers/og/dans_la_douceur_du_soir.jpg"></a></div>
+      <div class="slides fade"><a href="/livres/dans_mon_chien"><img alt="Dans mon chien" src="/images/covers/og/dans_mon_chien.jpg"></a></div>
+      <div class="slides fade"><a href="/livres/carnaccia"><img alt="Carnaccia" src="/images/covers/og/carnaccia-500.webp"></a></div>
+      <div class="slides fade"><a href="/livres/petit_camp"><img alt="Petit Camp" src="/images/covers/og/petit_camp.jpg"></a></div>
+      <div class="slides fade"><a href="/livres/la_revanche_du_neandertal"><img alt="La Revanche du Néandertal" src="/images/covers/og/neandertal.jpg"></a></div>
+      <div class="slides fade"><a href="/livres/haut_risque"><img alt="Haut Risque" src="/images/covers/og/haut_risque.jpg"></a></div>
+      <div class="slides fade"><a href="/livres/la_desolation_des_singes"><img alt="La Désolation des Singes" src="/images/covers/og/la_desolation_des_singes.jpg"></a></div>
+      <div class="slides fade"><a href="/livres/lovepointnet"><img alt="Lovepointnet" src="/images/covers/og/lovepointnet.jpg"></a></div>
+    </div>
+    <div style="display: table-cell; width: 30%; padding: 1rem; text-align: center;">
+      <h2>Album: Arts & Essais</h2>
+      <a href="/objetperdu1"><img height="200" alt="Objet Perdu" src="/images/covers/og/objet_perdu-500.webp">
+        <br />
+        <h3 style="border-bottom: inherit; width: inherit; display: inline;">Objet perdu:</h3>
+        <br/>
+        <strong>Un document PARC</strong>
+      </a>
+    </div>
+
+    <div style="display: table-cell; width: 30%; padding: 1rem;  ">
+      <h2>Livres / Littérature</h2>
+      <div class="livres_slide" style="float: right;">
+        <div class="slideshow-container">
+          <div class="slides fade"><a href="/livres/carnaccia"><img alt="Carnaccia" src="/images/covers/og/carnaccia-500.webp"></a></div>
+          <div class="slides fade"><a href="/livres/dans_mon_chien"><img alt="Dans mon chien" src="/images/covers/og/dans_mon_chien.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/petit_camp"><img alt="Petit Camp" src="/images/covers/og/petit_camp.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/la_revanche_du_neandertal"><img alt="La Revanche du Néandertal" src="/images/covers/og/neandertal.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/haut_risque"><img alt="Haut Risque" src="/images/covers/og/haut_risque.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/la_desolation_des_singes"><img alt="La Désolation des Singes" src="/images/covers/og/la_desolation_des_singes.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/lovepointnet"><img alt="Lovepointnet" src="/images/covers/og/lovepointnet.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/dans_la_douceur_du_soir"><img alt="Dans la douceur du soir" src="/images/covers/og/dans_la_douceur_du_soir.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/mort_parce_que_bete"><img alt="Mort parce que Bête" src="/images/covers/og/mort_parce_que_bete.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/traite_de_bouddhisme_a_l_usage_du_bourgeois_d_occident"><img alt="Traîté de Bouddhisme" src="/images/covers/og/traite_de_bouddhisme.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/le_marche_de_la_detresse"><img alt="Le marché de la détresse" src="/images/covers/og/marche_de_la_detresse.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/l_evangile_selon_pitbull"><img alt="L'Évangile selon Pitbull" src="/images/covers/og/evangile_pittbull.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/conseils_au_collegien"><img alt="Conseils au Collégien" src="/images/covers/og/conseils_au_collegien.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/mars_ou_creve"><img alt="Mars ou crève" src="/images/covers/og/mars_ou_creve.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/declaration_universelle_des_droits_du_cochon"><img alt="Déclaration universelle des droits du cochon" src="/images/covers/og/droits_du_cochon.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/la_main_d_hermes"><img alt="La Main d'Hermès" src="/images/covers/og/la_main_d_hermes.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/lettres_de_rupture_et_autres_produits_finis"><img alt="Lettres de Rupture…" src="/images/covers/og/lettres_de_rupture.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/amour_sevices_morgue"><img alt="Amour, Sévices & Morgue" src="/images/covers/og/amour_sevices_morgue.jpg"></a></div>
+          <div class="slides fade"><a href="/livres/proces"><img alt="Procès" src="/images/covers/og/proces.jpg"></a></div>
+          <a class="prev">&#10094;</a><a class="next">&#10095;</a>
+        </div>
+      </div>
+      <ul style="line-height: 3rem;">
+        <li><a href="/parc/histoire">L'Histoire</a></li>
+        <li><a href="/parc/catalogue">Le Catalogue</a></li>
+        <li><a href="/parc/commander">Commander</a></li>
+        <li>
+          <a href="/paul-vermont-edition">
+            Paul Vermont
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <hr>
-  <table style="width: 874px; height: 532px;" border="1" cellpadding="0" cellspacing="1">
-    <tbody>
-    <tr>
-      <td valign="top" width="193">
 
-        <p style="text-align: center; font-weight: bold; color: #d6d600;"><font face="Arial">PRÉSENTATION</font></p>
+  <section>
+    <q style="text-align: justify; border: 0; color: #d6d600;" class="commentary">
+      On croit, au moyen du
+      clonage reproductif, produire une rationalité, saisir
+      un langage au sein d'une syntaxe moléculaire&nbsp;; on
+      croit décrypter la raison séquencielle du
+      mystère, mais du fond de cette crypte une voix
+      s'élève qui n'est pas celle de l'homme mais
+      celle&nbsp;—&nbsp;oraculaire en quelque sorte - qui désigne
+      l'autre de l'homme au ras de son socle biologique, là
+      où on l'attendait le moins. Le <a href="/emurgence3">Breacher</a> est l'arbre qui cachait la forêt
+      humaine tout comme il est l'arbre qui se cachait dans la
+      forêt humaine. C'est pourquoi l'autre ne peut pas
+      être dans l'Un, il sera une double surprise. Mais une
+      double surprise incarnée dans la même
+      clairière que ses ancêtres&nbsp;—&nbsp;nous&nbsp;!&nbsp;—&nbsp;tels que
+      nous "<a href="/objetperdu0">subsistons</a>" encore dans le monde...
+    </q>
+    <p class="commentary" style="vertical-align: middle; text-align: center;">
+      <a href="/horizon"><img src="/images/breadcher.jpg" height="69" width="108"></a>
+    </p>
+  </section>
+</article>
 
-        <p><span style="font-weight: bold;"><span style="color: #ffffff;"><a href="/miscellanees">Miscellanées</a></span><br>
-          <br>
-        <span style="color: #d6d600;"><a href="/quid-lacunar">Quid-Lacunar</a></span><br>
-          <br>
-        <a href="/parc/morsure">Édition</a>&nbsp; (+ed. Paul Vermont)</span></p>
-        <p style="font-weight: bold;"><a href="/textes">Textes</a> &nbsp;On-Line<br>
-        </p>
-        <p><a href="/john_gelder-biographie"><span style="font-weight: bold;">Biographie John Gelder</span></a></p>
-        <p style="text-align: center;"><span style="font-weight: bold;"><span style="color: #d6d600;"><font face="Arial"><br>
-          NOMMER</font></span><span style="color: #d6d600;"><font face="Arial" size="-1">…</font></span></span></p>
-        <br>
-        <p><span style="font-weight: bold;"><span style="color: #d6d600;"><a href="/prosthesis">Prosthésis</a></span><span style="color: #000000;">*</span></span><span style="color: #d6d600;"><font size="-2">Français/English</font></span><br>
-        </p>
-        <p style="font-weight: bold;"><a href="/homonovus">Homonovus</a></p>
-        <p style="text-align: center; font-weight: bold; font-size: large;"><a href="/homonovus"><img style="width: 175px; height: 127px;" src="/images/homonov.jpg"></a><br>
-        </p>
-      </td>
-      <td valign="top" width="285">
-
-        <p style="text-align: center; font-weight: bold; color: #d6d600;"><font face="Arial">PHILOSOPHIE
-          DES TECHNIQUES</font></p>
-
-        <p><span style="font-weight: bold;"><span style="color: #d6d600;"><a href="/emurgence">Emergence,
-          émurgence</a></span><br>
-        </span></p>
-        <p><span style="font-weight: bold;"><span style="color: #d6d600;"><a href="/hominisation">L'Hominisation
-          comme</a><span style="color: #d6d600;"><a href="/hominisation">maladie</a></span></span></span><span style="color: #d6d600;"><font size="-2">-<br>
-        </font></span></p>
-        <p style="font-weight: bold; color: #000000;"><a href="/livres/le_marche_de_la_detresse">Marché
-          de la détresse</a></p>
-        <p><span style="font-weight: bold; color: #d6d600;"><a href="/edouard-avdeew.interview">Edouard d'Avdeew </a></span>(Architecte-Paysagiste)<br>
-          <a href="/ancestrales"><span style="font-weight: bold;"></span></a></p>
-        <p><a href="/ancestrales"><span style="font-weight: bold;">Ancestrales</span></a></p>
-        <p><a href="/ancestrales"><span style="font-weight: bold;"></span></a><span style="font-weight: bold;"><a href="/horizon">Horizon</a><br>
-        </span></p>
-        <p style="font-weight: bold; color: #d6d600;"><a href="/empiredudefaut">L'Empire du
-          défaut</a></p>
-        <p><a href="/mediastase"><span style="font-weight: bold;">Médiastase </span><span style="color: #d6d600;"><font size="-2">Français/English</font></span></a></p>
-        <p><span style="font-weight: bold; color: #d6d600;"><a href="/ledarwinnouveau">Le Darwin nouveau est arrivé&nbsp;</a></span><span style="color: #d6d600;"><font size="-2">(PROJET)</font></span></p>
-        <p style="text-align: center;"><span style="font-weight: bold;"><span style="font-size: large;"><img style="width: 72px; height: 96px;" src="/images/homo.jpg">-</span><a href="/erectus">Erectus</a><br>
-        </span>
-        </p>
-      </td>
-      <td valign="top" width="277">
-
-        <p style="text-align: center; font-weight: bold; color: #d6d600;"><font face="Arial">ARTS
-          PLASTIQUES</font></p>
-
-        <p style="text-align: center;"><a href="/creprocruste"><img src="/images/o3heads.jpg" height="48" width="69">-<span style="font-weight: bold;">Procruste(s) : Robert Cremean</span></a><span style="color: #d6d600;"><font size="-2">(English/Français)</font></span>
-        </p>
-        <p style="text-align: center;"><span style="font-weight: bold;"><span style="font-size: large;"><br>
-          <a href="/pellican"><img src="/images/pelcari.jpg" height="58" width="77">-</a></span><a href="/pellican">La Machine à faire des
-          dieux</a>&nbsp;</span>
-        </p>
-        <p style="text-align: center;"><br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="/images/bolfilgrot.jpg" height="61" width="74">-<span style="font-weight: bold; color: #ffffff;"><a href="/bolivie">Bolivia</a></span><span style="color: #d6d600;"><font size="-2">Français/English</font></span></p>
-        <br>
-        <br>
-        <p style="text-align: center;"></p>
-        <p style="text-align: center;"><a href="/regards-d-enfants">&nbsp;<img style="width: 84px; height: 64px;" src="/images/esapavisagegamin.jpg">-<span style="font-weight: bold;">Regards d'enfants</span></a><br>
-          <br>
-          <br>
-          <a href="/textes/un_voyageur_solitaire"><img style="width: 89px; height: 58px;" alt="Alex Barbier gouaches pour &quot;Le Voyageur Solitaire&quot; d'Orcan" src="/images/voyageurab1.jpg"><span style="font-weight: bold;"> Un Voyageur solitaire…</span></a></p>
-      </td>
-    </tr>
-    </tbody>
-  </table>
-  <hr>
-  <b><font color="#ffffff"><big><big><big><big><a href="/parc">Parc</a></big></big></big></big> &nbsp;(</font></b><span style="font-weight: bold; color: #ffffff;">ÉDITION)<br>
-  <br>
-</span><span style="font-weight: bold; color: #ffffff;">&nbsp;- </span><span style="font-weight: bold; color: #ffffff;">Promotion Arts &amp; Culture - </span><font style="font-weight: bold; color: rgb(255, 0, 0);" color="#ffffff"><br>
-  <big><span style="font-weight: bold;"></span></big></font><br >
-</center>
-<br>
-<center><a href="/livres/dans_la_douceur_du_soir"><img src="/images/covers/og/dans_la_douceur_du_soir.jpg" height="138" width="94"></a>-<a href="/livres/lovepointnet"><img src="/images/covers/og/lovepointnet.jpg" height="139" width="92"></a>-<a href="/livres/la_desolation_des_singes"><img src="/images/covers/og/la_desolation_des_singes.jpg" height="138" width="89"></a>-<a href="/livres/haut_risque"><img src="/images/covers/og/haut_risque.jpg" height="138" width="85"></a>-
-  <a href="/livres/la_revanche_du_neandertal"><img src="/images/covers/og/neandertal.jpg" height="131" width="75"></a>-<a href="/livres/petit_camp"><img src="/images/covers/og/petit_camp.jpg" height="131" width="75"></a>-<a href="/livres/carnaccia"><img src="/images/covers/og/carnaccia-500.webp" height="131" width="76"></a>-<a href="/livres/dans_mon_chien"><img src="/images/covers/og/dans_mon_chien.jpg" height="131" width="75"></a>
-  <table border="0" cellpadding="0" cellspacing="0" width="750">
-    <tbody>
-    <tr>
-      <td valign="top" width="193">
-
-        <p style="text-align: center; font-weight: bold; color: #d6d600;"><font face="Arial">ALBUM/ARTS
-          &amp; ESSAIS</font></p>
-
-        <p><span style="font-weight: bold;"><span style="font-size: large; color: #000000;">*</span><i><span style="font-size: x-large; color: #d6d600;"><a href="/objetperdu1">Objet
-          perdu&nbsp;:</a></span></i><br>
-          <br>
-        <span style="font-size: large; color: #000000;">*</span><span style="font-size: large; color: #d6d600;"><a href="/objetperdu1">Un
-          document Parc</a></span></span>
-        </p>
-      </td>
-      <td width="92">
-        <p style="font-weight: bold; font-size: large; color: #d6d600;"><a href="/objetperdu1"><img style="width: 122px; height: 167px;" src="/images/objetpok.jpg"></a></p>
-      </td>
-      <td valign="top" width="171">
-
-        <p style="text-align: center; font-weight: bold; color: #d6d600;"><font face="Arial">LIVRES/LITTÉRATURE</font></p>
-
-        <p style="text-align: center;"><span style="font-weight: bold;"><span style="font-size: large; color: #000000;">*</span><a href="/parc"><span style="font-size: large; color: #d6d600;">Les
-          éditions PARC</span><span style="font-size: large; color: #000000;">*</span></a></span></p>
-
-        <p style="text-align: center; font-weight: bold; font-size: large; color: #d6d600;"><a href="/parc/catalogue">Catalogue</a></p>
-
-        <p style="text-align: center;"><span style="font-weight: bold;"><span style="font-size: large; color: #000000;">*</span><span style="font-size: large; color: #d6d600;"><a href="/parc/commander">Commander</a></span></span>
-        </p>
-
-        <p style="text-align: center; font-weight: bold; font-size: large; color: #d6d600;"><a href="/paul-vermont-edition">Paul
-          Vermont</a></p>
-      </td>
-      <td width="95">
-
-        <p style="text-align: center;"><a href="/parc"><img src="/images/parc/logo.png" height="85" width="79"></a></p>
-      </td>
-    </tr>
-    </tbody>
-  </table>
-  <hr>
-  <table border="0" cellpadding="0" width="750">
-    <tbody>
-    <tr>
-      <td valign="top" width="593">
-        <p style="color: #d6d600;">«&nbsp;On croit, au moyen du
-          clonage reproductif, produire une rationalité, saisir
-          un langage aux sein d'une syntaxe moléculaire; on
-          croit décrypter la raison séquencielle du
-          mystère, mais du fond de cette crypte une voix
-          s'élève qui n'est pas celle de l'homme mais
-          celle - oraculaire en quelque sorte - qui désigne
-          l'autre de l'homme au ras de son socle biologique, là
-          où on l'attendait le moins. Le <a href="/emurgence3">Breacher</a> est l'arbre qui cachait la forêt
-          humaine tout comme il est l'arbre qui se cachait dans la
-          forêt humaine. C'est pourquoi l'autre ne peut pas
-          être dans l'Un, il sera une double surprise. Mais une
-          double surprise incarnée dans la même
-          clairière que ses ancêtres - nous ! - tels que
-          nous "<a href="/objetperdu0">subsistons</a>" encore dans le monde..&nbsp;»</p>
-      </td>
-      <td>
-        <p style="text-align: center;"><a href="/horizon"><img src="/images/breadcher.jpg" height="69" width="108"></a></p>
-      </td>
-    </tr>
-    </tbody>
-  </table>
-</center>
-
-<p style="text-align: center;">
-  Promotion Arts&amp;Culture (PARC) - 14 rue Émile Desvaux - 75019 Paris
-  <br />
-  <span style="font-weight: bold;"><a href="mailto:lacunar.org@gmail.com">contact</a></span>
-</p>
-
+<footer>
+  <nav>
+    <ul>
+      <li>
+        Promotion Arts&nbsp;&amp;&nbsp;Culture (PARC)
+        <br />
+      </li>
+      <li>
+        <a href="/legalese">Mentions Légales</a>
+      </li>
+    </ul>
+  </nav>
+</footer>
 </body>
 </html>
