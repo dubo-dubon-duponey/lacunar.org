@@ -67,14 +67,14 @@ header {
 }
 
 /* Letter decoration */
-main article > p:first-of-type:first-letter {
-  margin: -2rem 0.2rem -3rem;
+main article > p:first-of-type:first-letter, main article section > p:first-of-type:first-letter {
+  margin: -1.5rem 0.2rem;
   padding: 0;
   float: left;
-  font-size: 600%;
+  font-size: 500%;
 }
 
-main article > p:first-letter {
+main article > p:first-letter, main article section > p:first-letter {
   margin-left: 2rem !important;
 }
 
