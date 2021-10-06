@@ -15,7 +15,7 @@
   <meta property="og:locale" content="fr-FR">
 
   <title>Objet Perdu: Sommaire</title>
-  <link rel="canonical" href="https://lacunar.org/objetperdu_sommaire">
+  <link rel="canonical" href="https://lacunar.org/objet_perdu/sommaire">
   <meta content="" name="author" />
   <meta content="" name="description" />
   <meta name="keywords" content="">
@@ -34,14 +34,10 @@
       color: black;
     }
 
-    li {
-      line-height: 2rem;
+    main article li {
+      padding: 1rem;
+      border-bottom: 1px dotted grey;
     }
-    /*
-        li {
-          max-width: 60%;
-        }
-    */
 
     /* Authors */
     main article li > :nth-last-child(n+3){
@@ -55,8 +51,16 @@
 
     /* Titles */
     main article li > :nth-last-child(2) {
-      border: 2px solid green;
       float: left;
+    }
+
+    main article li > a:nth-last-child(2) {
+      font-weight: bold;
+      border-bottom: 1px dotted black;
+      background-color: #cfbfbf;
+    }
+    main article li > a:nth-last-child(2):hover {
+      background-color: #efdfdf;
     }
 
     /* Page numbers */
@@ -66,22 +70,18 @@
       float: inherit;
     }
 
-/*
-        <span>William Cliff</span>
-        <a href="https://fr.wikipedia.org/wiki/Michel_Houellebecq">Michel Houellebecq</a>
-        <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>
-        <cite>Le monde tel</cite>
-        <span>pages 19 à 21</span>
- */
-
-
-
-    /*
-    li cite+span {
-      float: right;
+    aside {
+      background-color: white;
     }
-    */
-    li:after {
+
+    main article > p:first-letter {
+      margin: inherit !important;
+      padding: inherit !important;
+      float: inherit !important;
+      font-size: inherit !important;
+    }
+
+    main article li:after {
       content: "";
       clear: left;
       display: table;
@@ -118,208 +118,207 @@
     <ul>
       <li>
         <cite>Mettre à l’étiage les spéculations de l’humain</cite>
-        <span>page 9</span>
+        <span>9</span>
       </li>
       <li>
         <cite>Petit glossaire</cite>
-        <span>page 11</span>
+        <span>11</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a>
         <cite>L’évangile du cri</cite>
-        <span>page 15</span>
+        <span>15</span>
       </li>
       <li>
-        <span>William Cliff</span>
+        <a href="https://fr.wikipedia.org/wiki/William_Cliff">William Cliff</a>
         <a href="https://fr.wikipedia.org/wiki/Michel_Houellebecq">Michel Houellebecq</a>
         <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>
         <cite>Le monde tel</cite>
-        <span>pages 19 à 21</span>
+        <span>19 à 21</span>
       </li>
       <li>
         <span>Sara Gozlan</span>
         <cite>IHVHI</cite>
-        <span>page 23</span>
+        <span>23</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>
         <a href="/objet_perdu/hospitalite_du_desastre"><cite>L’hospitalité du désastre</cite></a>
-        <span>page 27</span>
+        <span>27</span>
       </li>
       <li>
-<span>Xavier Zimmermann
-        </span><cite>Les cathédrales</cite>
-        <span>page 32</span>
+        <span>Xavier Zimmermann</span>
+        <cite>Les cathédrales</cite>
+        <span>32</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Dominique_Noguez">Dominique Noguez</a>
         <cite>Ritournelle des belles maladies</cite>
-        <span>page 34</span>
+        <span>34</span>
       </li>
       <li>
         <cite>Abyssum Abyssus Invocat</cite>
-        <span>pages 45, 53, 67, 97, 119, 191, 259</span>
+        <span>45, 53, 67, 97, 119, 191, 259</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Michel_Tibon-Cornillot">Michel Tibon-Cornillot</a>
-        <a href="/objet_perdu/hominisation"><cite>L’hominisation
-          comme maladie, les techniques comme soin</cite></a>
-        <span>page 37</span>
+        <a href="/objet_perdu/hominisation"><cite>L’hominisation comme maladie, les techniques comme soin</cite></a>
+        <span>37</span>
       </li>
       <li>
-        <cite>Textes</cite>, <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a><a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>, Richard Lebon
-        <span>page 46</span>
+        <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a>
+        <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>
+        <span>Richard Lebon</span>
+        <cite>Textes</cite>
+        <span>46</span>
       </li>
       <li>
-<span>Fernand Kolney,
-        </span><cite>Quelques purs artistes pour s’ouvrir les
-        veines</cite>
-        <span>page 51</span>
+        <a href="https://fr.wikipedia.org/wiki/Fernand_Kolney">Fernand Kolney</a>
+        <cite>Quelques purs artistes pour s’ouvrir les veines</cite>
+        <span>51</span>
       </li>
       <li>
-        <a href="https://fr.wikipedia.org/wiki/John_Gelder">Jacques Niesten</a>,
+        <a href="https://fr.wikipedia.org/wiki/John_Gelder">Jacques Niesten</a>
         <a href="/objet_perdu/les_limites_du_jeu"><cite>Les Limites du jeu</cite></a>
-        <span>page 55</span>
+        <span>55</span>
       </li>
       <li>
-<span>Philippe Soupault,
-        </span><cite>Plus rien</cite>
-        <span>page 59</span>
+        <a href="https://fr.wikipedia.org/wiki/Philippe_Soupault">Philippe Soupault</a>
+        <cite>Plus rien</cite>
+        <span>59</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Michel_Houellebecq">Michel Houellebecq</a>
         <cite>Approches du désarroi</cite>
-        <span>page 61</span>
+        <span>61</span>
       </li>
       <li>
-        <cite>Textes</cite>,
-        <a href="https://fr.wikipedia.org/wiki/Alain_Defoss%C3%A9">Alain Defossé</a>,
-        <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a>,
-        Pierre Guerche, Frédéric Dieu
-        <span>page 65</span>
+        <cite>Textes</cite>
+        <a href="https://fr.wikipedia.org/wiki/Alain_Defoss%C3%A9">Alain Defossé</a>
+        <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a>
+        <span>Pierre Guerche</span>
+        <span>Frédéric Dieu</span>
+        <span>65</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>
         <cite>Collapsus.I</cite>
-        <span>page 73</span>
+        <span>73</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Friedrich_Nietzsche">Friedrich Nietzsche</a>
-        <cite>Le monde de la pure fiction</cite> (bilingue)
-        <span>page 79</span>
+        <cite>Le monde de la pure fiction (bilingue)</cite>
+        <span>79</span>
       </li>
       <li>
+        <a href="https://fr.wikipedia.org/wiki/John_Carew_Eccles">John C. Eccles</a>
         <cite>Le darwinisme crétin</cite>
-        (J. Eccles)
-        <span>page 85</span>
+        <span>85</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a>
-        <cite>Lapidaires (pour un matérialisme
-          négatif)</cite>
-        <span>page 89</span>
+        <cite>Lapidaires (pour un matérialisme négatif)</cite>
+        <span>89</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/John_Gelder">Arnaud Gyl</a>
         <cite>Phylogenèse I</cite>
-        <span>page 101</span>
+        <span>101</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a>
         <cite>Faible fable</cite>
-        <span>page 107</span>
+        <span>107</span>
       </li>
       <li>
-<span>Claude Bucciarelli,
-        </span><cite>La disparition</cite>
-        <span>page 109</span>
+        <span>Claude Bucciarelli</span>
+        <cite>La disparition</cite>
+        <span>109</span>
       </li>
       <li>
-<span>Bastien Lallemant,
-        </span><cite>Les deux cornes de ma vache</cite>
-        <span>page 111</span>
+        <span>Bastien Lallemant</span>
+        <cite>Les deux cornes de ma vache</cite>
+        <span>111</span>
       </li>
       <li>
-<span>ilovan Danojlic,
-        </span><cite>Trou de souris</cite>
-        <span>page 113</span>
+        <a href="https://fr.wikipedia.org/wiki/Milovan_Danojli%C4%87">Milovan Danojlic</a>
+        <cite>Trou de souris</cite>
+        <span>113</span>
       </li>
       <li>
-<span>Pierre Mérot,
-        </span><cite>Le petit camp</cite>
-        <span>page 119</span>
+        <a href="https://fr.wikipedia.org/wiki/Pierre_M%C3%A9rot">Pierre Mérot</a>
+        <cite>Le petit camp</cite>
+        <span>119</span>
       </li>
       <li>
-<span>Pierre Kuntz,
-        </span><cite>L’ostracisme biologique</cite>
-        <span>page 124</span>
+        <span>Pierre Kuntz</span>
+        <cite>L’ostracisme biologique</cite>
+        <span>124</span>
       </li>
       <li>
-<span>Ghislain Ripault,
-        </span><cite>L’épreuve par le fou</cite>
-        <span>page 129</span>
+        <span>Ghislain Ripault</span>
+        <cite>L’épreuve par le fou</cite>
+        <span>129</span>
       </li>
       <li>
-<span>Stéphane Zagdanski,
-        </span><cite>Éjaculations présocratiques</cite>
-        <span>page 135</span>
+        <a href="https://fr.wikipedia.org/wiki/St%C3%A9phane_Zagdanski">Stéphane Zagdanski</a>
+        <cite>Éjaculations présocratiques</cite>
+        <span>135</span>
       </li>
       <li>
-<span>Claude Alexandre,
-        </span><cite>L’insoutenable pesanteur de la vie</cite>
-        <span>page 143</span>
+        <span>Claude Alexandre</span>
+        <cite>L’insoutenable pesanteur de la vie</cite>
+        <span>143</span>
       </li>
       <li>
-<span>Patrick Chavardès,
-        </span><cite>Côté basse-cour</cite>
-        <span>page 145</span>
+        <span>Patrick Chavardès</span>
+        <cite>Côté basse-cour</cite>
+        <span>145</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Armel_Louis">Armel Louis</a>
         <cite>La Déclaration universelle du droit du cochon</cite>
-        <span>page 151</span>
+        <span>151</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a>
         <cite>Ballade de l’extinction</cite>
-        <span>page 157</span>
+        <span>157</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/John_Gelder">Arnaud Gyl</a>
         <cite>Ballade de la fuite</cite>
-        <span>page 159</span>
+        <span>159</span>
       </li>
       <li>
-<span>Serge Pey,
-        </span><cite>Poèmes de bâton</cite>
-        <span>page 162</span>
+        <a href="https://fr.wikipedia.org/wiki/Serge_Pey">Serge Pey</a>
+        <cite>Poèmes de bâton</cite>
+        <span>162</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/John_Gelder">Jacques Niesten</a>
         <cite>Le Socle de la Fiction (Le matérialisme négatif)</cite>
-        <span>page 165</span>
+        <span>165</span>
       </li>
       <li>
-<span>Marc’O,
-        </span><cite>Le tragique et l’acteur - Génération
-        Chaos II</cite>
-        <span>page 177</span>
+        <a href="https://fr.wikipedia.org/wiki/Marc%27O">Marc’O</a>
+        <cite>Le tragique et l’acteur - Génération Chaos II</cite>
+        <span>177</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Michel_Tibon-Cornillot">Michel Tibon-Cornillot</a>
         <cite>Toxicomanie, Petite prophétie</cite>
-        <span>page 183</span>
+        <span>183</span>
       </li>
       <li>
-<span>Pascal Dorcéan,
-        </span><cite>Nietzsche Nègre</cite>
-        (Extraits&#xA0;: Frankétienne)
-        <span>page 191</span>
+        <span>Pascal Dorcéan</span>
+        <cite>Nietzsche Nègre (extraits&#xA0;: Frankétienne)</cite>
+        <span>191</span>
       </li>
       <li>
-<span>Gilles Mayné,
-        </span><cite>La science de l’ordure</cite>
-        <span>page 195</span>
+        <span>Gilles Mayné</span>
+        <cite>La science de l’ordure</cite>
+        <span>195</span>
       </li>
 
 
@@ -330,242 +329,243 @@
       <li>
         <a href="https://fr.wikipedia.org/wiki/Armel_Louis">Armel Louis</a>
         <cite>Figurine d’exécration</cite>
-        <span>page 205</span>
+        <span>205</span>
       </li>
       <li>
-<span>Christian Ganachaud,
-        </span><cite>Messies</cite>
-        <span>page 207</span>
+        <span>Christian Ganachaud</span>
+        <cite>Messies</cite>
+        <span>207</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Werner_Lambersy">Werner Lambersy</a>
         <cite>La Mission</cite>
-        <span>page 209</span>
+        <span>209</span>
       </li>
       <li>
-<span>Elisabeth Prouvost,
-        </span><cite>Extase, Impouvoir, Disparition</cite>
-        <span>page 213</span>
+        <span>Elisabeth Prouvost</span>
+        <cite>Extase, Impouvoir, Disparition</cite>
+        <span>213</span>
       </li>
       <li>
         <cite>Penthésilée</cite>
-        <span>page 227</span>
+        <span>227</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Claude_Maillard">Claude Maillard</a>
         <cite>Petite pièce intermédiaire à jouer en sourdine</cite>
-        <span>page 229</span>
+        <span>229</span>
       </li>
       <li>
-<span>Jean-Michel Heimonet,
-        </span><cite>Bribes américaines, degré zéro de la motivation</cite>
-        <span>page 231</span>
+        <span>Jean-Michel Heimonet</span>
+        <cite>Bribes américaines, degré zéro de la motivation</cite>
+        <span>231</span>
       </li>
       <li>
-        <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>,
+        <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>
         <a href="/objet_perdu/the_city_i_hate_to_love"><cite>The City I hate to love</cite></a>
-        <span>page 239</span>
+        <span>239</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a>
         <cite>Ahan (I)</cite>
-        <span>page 243</span>
+        <span>243</span>
       </li>
       <li>
-<span>Sophie Lambert,
-        </span><cite>Les amours noires</cite>
-        <span>page 245</span>
+        <span>Sophie Lambert</span>
+        <cite>Les amours noires</cite>
+        <span>245</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/John_Gelder">Arnaud Gyl</a>
         <cite>Contre les flots avides</cite>
-        <span>page 248</span>
+        <span>248</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Dominique_Noguez">Dominique Noguez</a>
         <cite>Le manège du bonheur</cite>
-        <span>page 249</span>
+        <span>249</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Dominique_Noguez">Dominique Noguez</a>
         <cite>Un objet perdu ne se rattrape jamais</cite>
-        <span>page 251</span>
+        <span>251</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>
         <cite>Collapsus (II)</cite>
-        <span>page 255</span>
+        <span>255</span>
       </li>
       <li>
-        <a href="https://fr.wikipedia.org/wiki/Armel_Louis">Armel Louis</a>,
+        <a href="https://fr.wikipedia.org/wiki/Armel_Louis">Armel Louis</a>
         <a href="/objet_perdu/epopee_d_une_endive"><cite>Blabs, l’Epopée d’une endive</cite></a>
-        <span>page 261</span>
+        <span>261</span>
       </li>
       <li>
-<span>Aram Dervent,
-        </span><cite>L’autre et le même</cite>
-        <span>page 263</span>
+        <span>Aram Dervent</span>
+        <cite>L’autre et le même</cite>
+        <span>263</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a>
         <cite>Dormir debout</cite>
-        <span>page 265</span>
+        <span>265</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/John_Gelder">Arnaud Gyl</a>
         <cite>Phylogenèse II</cite>
-        <span>page 271</span>
+        <span>271</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Thieri_Foulc">Thieri Foulc</a>
         <cite>L’art de la combinatoire (hypothèses, suppositions, positions)</cite>
-        <span>page 275</span>
+        <span>275</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Pierre_Le_Pillou%C3%ABr">Pierre le Pillouër</a>
         <cite>Quelques obscurcissements, poèmes</cite>
-        <span>page 281</span>
+        <span>281</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Jean-Pierre_Verheggen">Jean-Pierre Verheggen</a>
         <cite>Jusqu’au trou d’sa miola</cite>
-        <span>page 283</span>
+        <span>283</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Christian_Prigent">Christian Prigent</a>
-        <cite>Prière du matin</cite> (extrait)
-        <span>page 285</span>
+        <cite>Prière du matin (extrait)</cite>
+        <span>285</span>
       </li>
       <li>
-<span>Pierre Kuntz,
-        </span><cite>Le sacrifice d’Onan</cite>
-        <span>page 291</span>
+        <span>Pierre Kuntz</span>
+        <cite>Le sacrifice d’Onan</cite>
+        <span>291</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Jean_Streff">Jean Streff</a>
         <cite>Bande à part</cite>
-        <span>page 293</span>
+        <span>293</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a>
         <cite>Ahan (II)</cite>
-        <span>page 297</span>
+        <span>297</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Raoul_Vaneigem">Raoul Vaneigem</a>
         <cite>Voici le sang du Christ, d’après Épiphane</cite>
-        <span>page 299</span>
+        <span>299</span>
       </li>
       <li>
-<span>Claude Alexandre,
-        </span><cite>La rage au ventre</cite>
-        <span>page 301</span>
+        <span>Claude Alexandre</span>
+        <cite>La rage au ventre</cite>
+        <span>301</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Alain_Defoss%C3%A9">Alain Defossé</a>
         <cite>De la fréquentation des anges</cite>
-        <span>page 303</span>
+        <span>303</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/G%C3%A9rard_Pfister">Gérard Pfister</a>
         <cite>L’amitié des choses</cite>
-        <span>page 309</span>
+        <span>309</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a>
-        <cite>L’effet papillon selon le rabbi de
-          Lubovitch</cite>
-        <span>page 313</span>
+        <cite>L’effet papillon selon le rabbi de Lubovitch</cite>
+        <span>313</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Dominique_Noguez">Dominique Noguez</a>
         <cite>Un assez pathétique sentiment d’insuffisance</cite>
-        <span>page 315</span>
+        <span>315</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Victoria_Th%C3%A9rame">Victoria Thérame</a>
         <cite>Kérosène infini</cite>
-        <span>page 317</span>
+        <span>317</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Michel_Houellebecq">Michel Houellebecq</a>
         <cite>Prise de contrôle sur numéris</cite>
-        <span>page 323</span>
+        <span>323</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Fabrice_Hadjadj">Fabrice Hadjadj</a>
         <cite>Le défenestré</cite>
-        <span>page 329</span>
+        <span>329</span>
       </li>
       <li>
         <a href="https://fr.wikipedia.org/wiki/Daniel_Mauroc">Daniel Mauroc</a>
         <cite>Qui sait quoi&#x202F;?</cite>
-        <span>page 331</span>
+        <span>331</span>
       </li>
       <li>
-<span>Frédéric Dieu,
-        </span><cite>Ascendance</cite>
-        <span>page 341</span>
+        <span>Frédéric Dieu</span>
+        <cite>Ascendance</cite>
+        <span>341</span>
       </li>
       <li>
-        <span>Jannick Jaouen, </span><a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>, <a href="https://fr.wikipedia.org/wiki/Marc_Weitzmann">Marc Weitzmann</a>
+        <span>Jannick Jaouen</span>
+        <a href="https://fr.wikipedia.org/wiki/John_Gelder">John Gelder</a>
+        <a href="https://fr.wikipedia.org/wiki/Marc_Weitzmann">Marc Weitzmann</a>
         <cite>Textes</cite>
-        <span>page 335</span>
+        <span>335</span>
       </li>
       <li>
-<span>Pierre Clementi,
-        </span><cite>Chronique d’une mort retardée</cite>
-        <span>page 345</span>
+        <span>Pierre Clementi</span>
+        <cite>Chronique d’une mort retardée</cite>
+        <span>345</span>
       </li>
       <li>
-<span>Béatrice Courraud,
-        </span><cite>Le livre de Pierre</cite>
-        <span>page 349</span>
+        <span>Béatrice Courraud</span>
+        <cite>Le livre de Pierre</cite>
+        <span>349</span>
       </li>
       <li>
-<span>Julie Brock,
-        </span><cite>Le visage comme négation de l’humain</cite>
-        <span>page 353</span>
+        <span>Julie Brock</span>
+        <cite>Le visage comme négation de l’humain</cite>
+        <span>353</span>
       </li>
       <li>
         <cite>Statues</cite>
-        <span>page 361</span>
+        <span>361</span>
       </li>
     </ul>
     <h3>Photos</h3>
     <p>
       Claude Alexandre
-      - <a href="https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Bauret">Jean-François Bauret</a>
-      - André Cromphout
-      - Aram Darvant
-      - Éric Emo
-      - Florence Maillot
-      - Gilles Maury
-      - Elisabeth Prouvost
-      - Michel Waxmann
-      - Xavier Zimmerman
+      – <a href="https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Bauret">Jean-François Bauret</a>
+      – André Cromphout
+      – Aram Darvant
+      – Éric Emo
+      – Florence Maillot
+      – Gilles Maury
+      – Elisabeth Prouvost
+      – Michel Waxmann
+      – Xavier Zimmerman
     </p>
-    <h3>Peintures - Sculptures - Gravures - Dessins</h3>
+    <h3>Peintures&#x202F;–&#x202F;Sculptures&#x202F;–&#x202F;Gravures&#x202F;–&#x202F;Dessins</h3>
     <p>
       <a href="https://fr.wikipedia.org/wiki/Zdzis%C5%82aw_Beksi%C5%84ski">Beksinski</a>
-      - <a href="https://fr.wikipedia.org/wiki/J%C3%A9r%C3%B4me_Bosch">Jérôme Bosch</a>
-      - Robert Cremean
-      - Philippe Deboulle
-      - Joël Desbouigues
-      - <a href="https://fr.wikipedia.org/wiki/Gustave_Dor%C3%A9">Gustave Doré</a>
-      - Jacques Drouin
-      - Michel Duhann Oy
-      - Éric Emo
-      - <a href="https://fr.wikipedia.org/wiki/Thieri_Foulc>">Thieri Foulc</a>
-      - Apolline Franszyk
-      - <a href="https://fr.wikipedia.org/wiki/Roel_D%27Haese">Roel d’Haese</a>
-      - Bastien Lallemant
-      - <a href="https://fr.wikipedia.org/wiki/Louis_Pons_(artiste)">Louis Pons</a>
-      - Eric Roncerel
-      - <a href="https://fr.wikipedia.org/wiki/F%C3%A9licien_Rops">Félicien Rops</a>
-      - Hans Schärer
-      - Barthélémy Schwartz
-      - Michel Waxmann
+      – <a href="https://fr.wikipedia.org/wiki/J%C3%A9r%C3%B4me_Bosch">Jérôme Bosch</a>
+      – Robert Cremean
+      – Philippe Deboulle
+      – Joël Desbouigues
+      – <a href="https://fr.wikipedia.org/wiki/Gustave_Dor%C3%A9">Gustave Doré</a>
+      – Jacques Drouin
+      – Michel Duhann Oy
+      – Éric Emo
+      – <a href="https://fr.wikipedia.org/wiki/Thieri_Foulc>">Thieri Foulc</a>
+      – Apolline Franszyk
+      – <a href="https://fr.wikipedia.org/wiki/Roel_D%27Haese">Roel d’Haese</a>
+      – Bastien Lallemant
+      – <a href="https://fr.wikipedia.org/wiki/Louis_Pons_(artiste)">Louis Pons</a>
+      – Eric Roncerel
+      – <a href="https://fr.wikipedia.org/wiki/F%C3%A9licien_Rops">Félicien Rops</a>
+      – Hans Schärer
+      – Barthélémy Schwartz
+      – Michel Waxmann
     </p>
   </article>
 </main>
