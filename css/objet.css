@@ -1,0 +1,99 @@
+/* Should be site default  */
+header p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  img {
+    max-width: 100%;
+    height: inherit;
+    margin: 0;
+  }
+}
+
+/* Should be Parc only or site? */
+h1 {
+  font-variant: all-small-caps;
+  font-family: Tex Gyre Adventor, "Century Gothic", Futura, sans-serif;
+}
+
+a:link, a:visited {
+  color: black;
+}
+
+footer {
+  font-variant: small-caps;
+}
+
+header {
+  font-family: Tex Gyre Adventor, "Century Gothic", Futura, sans-serif;
+}
+
+/* New Parc logo */
+.parc_logo {
+  font-family: Tex Gyre Adventor, "Century Gothic", Futura, sans-serif;
+  border-bottom: 1px dotted black;
+  padding-bottom: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.parc_logo a {
+  color: black;
+  margin: auto;
+  display: flex;
+  width: 12rem;
+  height: 12rem;
+  border: 5px solid #222222;
+  background-color: white;
+}
+
+.parc_logo a span {
+  font-size: 4.7rem;
+  line-height: 6.5rem;
+  width: 100%;
+  align-self: flex-end;
+}
+
+.parc_logo.back_grey a {
+  background-color: grey;
+}
+
+.parc_logo.front_red figcaption {
+  color: #af0000;
+}
+
+.parc_logo.front_white figcaption {
+  color: #FFFFFF;
+}
+
+/* Letter decoration */
+main article > p:first-of-type:first-letter {
+  margin: -2rem 0.2rem -3rem;
+  padding: 0;
+  float: left;
+  font-size: 600%;
+}
+
+main article > p:first-letter {
+  margin-left: 2rem !important;
+}
+
+main article figcaption {
+  text-align: right;
+}
+
+main article figure blockquote:after {
+  content: "\00a0»"
+}
+main article figure blockquote:before {
+  content: "«\00a0"
+}
+
+aside figure {
+  text-align: center;
+}
+
+aside li {
+  line-height: 2rem;
+  font-variant: small-caps;
+}
