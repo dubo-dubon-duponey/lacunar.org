@@ -5,6 +5,7 @@ hospitalite.html /objet_perdu/hospitalite_du_desastre
 hospitalite /objet_perdu/hospitalite_du_desastre
 hospitalitedudesastre.html /objet_perdu/hospitalite_du_desastre
 hospitalitedudesastre /objet_perdu/hospitalite_du_desastre
+HospitaliteDuDesastre.html /objet_perdu/hospitalite_du_desastre
 thecity-i-hatetolove.html /objet_perdu/the_city_i_hate_to_love
 thecity-i-hatetolove /objet_perdu/the_city_i_hate_to_love
 leslimitesdujeu.html /objet_perdu/les_limites_du_jeu
@@ -35,6 +36,7 @@ violence /parc/morsure
 commander.html /parc/commander
 commander /parc/commander
 Sommaire.html /parc/catalogue
+sommaire.html /parc/catalogue
 livres.html /parc/
 ParcEdit-10X15.html /parc/10x15
 ParcEdit-15X21.html /parc/15x21
@@ -53,7 +55,9 @@ TarikNoui.html /textes/ma_langue_sur_le_trottoir
 Evangileselonpitbull.html /textes/l_evangile_selon_pitbull
 lacitedudevinbrecheur.html /textes/la_cite_hors_la_loi
 EpopeeDuneEndive.html /objet_perdu/epopee_d_une_endive
+/textes/epopee_d_une_endive /objet_perdu/epopee_d_une_endive
 UnVoyageurSolitaire.html /textes/un_voyageur_solitaire
+unvoyageursolitaire.html /textes/un_voyageur_solitaire
 unvoyageursolitaire /textes/un_voyageur_solitaire
 F.Issac_Qui_Suis-je.html /textes/qui_suis_je
 Moses&Jesus.html /textes/moise_et_jesus
@@ -98,13 +102,16 @@ johngelder-biographie.html /john_gelder-biographie
 CONSEILS-au-COLLEGIEN.html /livres/conseils_au_collegien
 TraiteBouddhisme.html /livres/traite_de_bouddhisme_a_l_usage_du_bourgeois_d_occident
 boud.html /livres/traite_de_bouddhisme_a_l_usage_du_bourgeois_d_occident
+/livres/traite_de_bouddhisme_a_l_usage_du_bourgeois_d_occident_introduction /livres/traite_de_bouddhisme_a_l_usage_du_bourgeois_d_occident
 virusetantidote.html /livres/lovepointnet_virus_et_antidote
 amour_total.html /livres/lovepointnet
+/livres/lovepointnet_amour_total /livres/lovepointnet
 Parc(Edition).html /parc
-marchedeladetresse.html /livres/marche_de_la_detresse
+marchedeladetresse.html /livres/le_marche_de_la_detresse
 LucarneDesEcrivains.html /la_lucarne_des_ecrivains
 CommNietzsch.html /nietzsche_to_weil
 AncestralesGelder.html /ancestrales
+ancestralesgelder.html /ancestrales
 DeclarationUniverselleCochon.html /livres/declaration_universelle_des_droits_du_cochon
 Droits_du_Cochon.html /textes/declaration_universelle_des_droits_du_cochon
 Barrabas.html /textes/barrabas
